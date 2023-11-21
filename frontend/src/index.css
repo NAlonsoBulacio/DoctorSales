@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.font-noto-200{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 200;
+}
+
+.font-noto-300{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 300;
+}
+
+.font-noto-400{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 400;
+}
+
+.font-noto-500{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 500;
+}
+.font-noto-600{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 600;
+}
+.font-plus-200{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 200;
+}
+.font-plus-300{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+}
+.font-plus-400{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+}
+.font-plus-500{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+}
