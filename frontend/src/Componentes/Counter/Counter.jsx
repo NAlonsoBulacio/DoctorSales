@@ -61,17 +61,17 @@ const Counter = () => {
         <div className="w-1/2 text-5xl h-48">
           <div ref={ref3} className="w-full flex justify-start items-center">
             <p className="text-purple-800 font-noto-500 w-40 text-right">
-              ${count3.toFixed(2)}
+            ${count3.toLocaleString(undefined, { minimumFractionDigits: 2 })}
             </p>
           </div>
           <div ref={ref1} className="flex justify-start items-center ">
             <p className="text-purple-800 font-noto-500 w-40 text-right">
-              ${count1.toFixed(2)}
+            ${count1.toLocaleString(undefined, { minimumFractionDigits: 2 })}
             </p>
           </div>
           <div ref={ref2} className="flex justify-start items-center ">
             <p className="text-purple-800 font-noto-500 w-40 text-right">
-              ${count2.toFixed(2)}
+            ${count2.toLocaleString(undefined, { minimumFractionDigits: 2 })}
             </p>
           </div>
           <div className="flex justify-start items-center">
