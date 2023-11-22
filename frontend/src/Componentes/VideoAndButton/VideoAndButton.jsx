@@ -18,7 +18,7 @@ const VideoAndButton = () => {
               justifyContent: "center",
             }}
           >
-            Agendá una llamada con nosotros
+            Agendá tu llamada con nosotros
           </button>
         </div>
         <div className="flex justify-center">

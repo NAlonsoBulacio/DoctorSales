@@ -3,7 +3,7 @@ import { FaBullhorn, FaChartLine, FaMedal } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
 const PilaresDoctor = () => {
   return (
-    <div className="w-full flex justify-center items-center bg-gray-100">
+    <div className="w-full flex justify-center items-center bg-gray-100 pb-32">
       <div>
         <div className="flex justify-center items-center">
           <hr className="border-t-1 border-purple-900 w-[1300px] my-12" />
