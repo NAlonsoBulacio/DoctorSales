@@ -1,30 +1,41 @@
 import React from "react";
-import { FaBullhorn, FaChartLine, FaMedal    } from "react-icons/fa";
+import { FaBullhorn, FaChartLine, FaMedal } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
+import Counter from "../Counter/Counter";
 const PilaresDoctor = () => {
   return (
     <div className="w-full flex justify-center items-center bg-gray-100">
       <div>
-        <hr className="border-t-1 border-purple-900 w-[1300px] my-12" />
-        <h1 className="text-2xl">
-          En Doctor Sales, nos enfocamos en establecer cinco pilares por los
-          cuales hacemos que tu negocio crezca:
-        </h1>
+        <div className="flex justify-center items-center">
+          <hr className="border-t-1 border-purple-900 w-[1300px] my-12" />
+        </div>
+        <div className="">
+          <h1 className="text-2xl text-gray-600 font-noto-300">
+            En Doctor Sales, nos enfocamos en establecer 4 pilares por los
+            cuales hacemos que tu negocio crezca:
+          </h1>
+        </div>
         <div className="flex flex-wrap justify-center items-center space-x-4 py-8">
-          <div className="w-full flex flex-wrap justify-center items-start py-14">
+          <div className="w-full flex flex-wrap justify-center items-start py-14 text-gray-600">
             <div className="w-2/5 px-14 flex items-start">
               <div className="flex justify-center items-center">
-                <div className="px-4 space-y-4">
+                <div className="px-4 space-y-4 ">
                   <div className="flex justify-center items-center">
-                    <FaBullhorn style={{ width: "50px", height: "50px", color: "#581c87" }} />
+                    <FaBullhorn
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        color: "#581c87",
+                      }}
+                    />
                   </div>
                   <div className="flex justify-center items-center">
                     <hr className="border-t-2 border-purple-900 w-2/3" />
                   </div>
-                  <p className="text-xl">
+                  <p className="text-xl text-gray-600">
                     Implementamos nuestro sistema de adquisición de clientes y
                     ventas en tu empresa utilizando todas las plataformas con un
-                    equipo de: SDR(sell development representative) , contenido
+                    equipo de: SDR(Sell Development Representative) , contenido
                     orgánico y ADS. Así, no solo dependemos de la capacidad de
                     tu equipo de crecimiento, sino que también generamos un
                     nuevo activo de ventas para ti.
@@ -36,7 +47,13 @@ const PilaresDoctor = () => {
               <div className="flex justify-center items-start">
                 <div className="px-4 space-y-4">
                   <div className="flex justify-center items-start">
-                    <FaPeopleGroup style={{ width: "50px", height: "50px", color: "#581c87" }} />
+                    <FaPeopleGroup
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        color: "#581c87",
+                      }}
+                    />
                   </div>
                   <div className="flex justify-center items-center">
                     <hr className="border-t-2 border-purple-900 w-2/3" />
@@ -52,12 +69,18 @@ const PilaresDoctor = () => {
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-wrap justify-center items-start">
+          <div className="w-full flex flex-wrap justify-center items-start text-gray-600">
             <div className="w-2/5 px-14">
               <div className="flex justify-center items-start">
                 <div className="px-4 space-y-4">
                   <div className="flex justify-center items-center">
-                    <FaChartLine style={{ width: "50px", height: "50px", color: "#581c87" }} />
+                    <FaChartLine
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        color: "#581c87",
+                      }}
+                    />
                   </div>
                   <div className="flex justify-center items-center">
                     <hr className="border-t-2 border-purple-900 w-2/3" />
@@ -76,7 +99,13 @@ const PilaresDoctor = () => {
               <div className="flex justify-center items-start">
                 <div className="px-4 space-y-4">
                   <div className="flex justify-center items-center">
-                    <FaMedal  style={{ width: "50px", height: "50px", color: "#581c87" }} />
+                    <FaMedal
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        color: "#581c87",
+                      }}
+                    />
                   </div>
                   <div className="flex justify-center items-center">
                     <hr className="border-t-2 border-purple-900 w-2/3" />
@@ -94,8 +123,8 @@ const PilaresDoctor = () => {
             </div>
           </div>
         </div>
+        <Counter />
       </div>
-      <img src="" alt="" />
     </div>
   );
 };
