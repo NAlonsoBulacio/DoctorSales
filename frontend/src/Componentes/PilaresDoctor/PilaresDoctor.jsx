@@ -1,7 +1,6 @@
 import React from "react";
 import { FaBullhorn, FaChartLine, FaMedal } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
-import Counter from "../Counter/Counter";
 const PilaresDoctor = () => {
   return (
     <div className="w-full flex justify-center items-center bg-gray-100">
@@ -123,7 +122,6 @@ const PilaresDoctor = () => {
             </div>
           </div>
         </div>
-        <Counter />
       </div>
     </div>
   );

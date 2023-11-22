@@ -1,6 +1,7 @@
 import React from "react";
 import VideoMp4 from "../../Componentes/VideoMp4/VideoMp4";
 import QuestionAndExcell from "../QuestionAndExcell/QuestionAndExcell";
+import QuestionAndNumber from "../QuestionAndNumber/QuestionAndNumber";
 import "./VideoAndButton.css";
 
 const VideoAndButton = () => {
@@ -23,7 +24,8 @@ const VideoAndButton = () => {
         <div className="flex justify-center">
         <hr className="border-t-1 border-gray-300 w-[1300px] my-12" />
         </div>
-        <QuestionAndExcell />
+        {/* <QuestionAndExcell /> */}
+        <QuestionAndNumber />
       </div>
     </div>
   );
