@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useState } from 'react';
+import ReactPlayer from 'react-player';
 import video from "../../Multimedia/video.mp4";
+import "./VideoMp4.css";
+import { FaPlay } from "react-icons/fa";
 const VideoMp4 = () => {
+  const [playing, setPlaying] = useState(false);
+
+  const togglePlay = () => {
+    setPlaying(!playing);
+  };
   return (
     <div className="flex justify-center items-center ">
-      <div>
-        {/* <h1 className="font-noto-400 text-gray-700 text-2xl">Nos apalancamos insertando un equipo de expertos en setters, copywriters, community managers, diseñadores y editores de vídeo, media buyer para la creación de campañas efectivas.</h1> */}
-        <video width="740" height="460" controls>
-          <source src={video} type="video/mp4" />
-          Tu navegador no soporta la etiqueta de video.
-        </video>
+      <div className="relative h-auto w-auto">
+      <ReactPlayer
+        url={video}// Reemplaza con la URL de tu video
+        playing={playing}
+        controls
+        width="740px"
+        height="460px"
+      />
+        {!playing && (
+        <div className="play-button" onClick={togglePlay}>
+          <FaPlay />
+        </div>
+      )}
       </div>
     </div>
   );

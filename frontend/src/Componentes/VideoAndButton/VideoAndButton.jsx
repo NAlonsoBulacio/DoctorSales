@@ -5,7 +5,7 @@ import "./VideoAndButton.css";
 
 const VideoAndButton = () => {
   return (
-    <div className="w-full h-auto flex justify-center items-start">
+    <div className="w-full h-auto flex justify-center items-start py-10">
       <div className="space-y-8">
         <VideoMp4 />
         <div className="flex justify-center items-center">

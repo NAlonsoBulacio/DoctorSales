@@ -24,13 +24,13 @@ const Header = () => {
                 gracias a nuestro método de Adquisición System, sin que dependa
                 de tu esfuerzo.
               </h1>
-              <div className="flex justify-center items-center space-x-4">
-                <h1 className="w-1/2 font-noto-300 text-white text-xl">
+              <div className="flex justify-center items-start space-x-4">
+                <h1 className="w-1/2 font-noto-300 text-white text-2xl">
                   En Doctor Sales, hemos desarrollado un sistema de adquisición
                   de clientes especialmente diseñado para empresas Saas como la
                   suya.
                 </h1>
-                <h1 className="w-1/2 font-noto-300 text-white text-xl">
+                <h1 className="w-1/2 font-noto-300 text-white text-2xl">
                   Nos apalancamos insertando un equipo de expertos en setters,
                   copywriters, community managers, diseñadores y editores de
                   vídeo, media buyer para la creación de campañas efectivas.
