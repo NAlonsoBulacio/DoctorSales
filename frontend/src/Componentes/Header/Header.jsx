@@ -17,7 +17,7 @@ const Header = () => {
             />
           </div>
 
-          <div className="flex justify-center items-center absolute top-44 translate-x-0">
+          <div className="flex justify-center items-center absolute top-36 translate-x-0">
             <div className="w-2/3 space-y-12">
               <h1 className="font-noto-400 text-white text-6xl">
                 Cómo lograr que tu empresa Saas B2B sume más de 4 ventas al mes
@@ -25,27 +25,14 @@ const Header = () => {
                 de tu esfuerzo.
               </h1>
               <div className="flex justify-center items-start space-x-4">
-                <h1 className="w-1/2 font-noto-300 text-white text-2xl">
+                <h1 className="w-full font-noto-300 text-white text-2xl">
                   En Doctor Sales, hemos desarrollado un sistema de adquisición
                   de clientes especialmente diseñado para empresas Saas como la
                   suya.
                 </h1>
-                <h1 className="w-1/2 font-noto-300 text-white text-2xl">
-                  Nos apalancamos insertando un equipo de expertos en setters,
-                  copywriters, community managers, diseñadores y editores de
-                  vídeo, media buyer para la creación de campañas efectivas.
-                </h1>
               </div>
-              {/* <h1 className="font-noto-400 text-white text-2xl">
-                En Doctor Sales, hemos desarrollado un sistema de adquisición de
-                clientes especialmente diseñado para empresas Saas como la suya.
-              </h1>
-              <h1 className="font-noto-400 text-white text-2xl">
-              Nos apalancamos insertando un equipo de expertos en setters, copywriters, community managers, diseñadores y editores de vídeo, media buyer para la creación de campañas efectivas.
-              </h1> */}
             </div>
           </div>
-
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 320"

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBullhorn, FaChartLine, FaMedal } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
+import grafico from '../../Multimedia/diagrama.png'
 const PilaresDoctor = () => {
   return (
     <div className="w-full flex justify-center items-center bg-gray-100 pb-32">
@@ -122,6 +123,7 @@ const PilaresDoctor = () => {
             </div>
           </div>
         </div>
+        {/* <img src={grafico} alt="" /> */}
       </div>
     </div>
   );

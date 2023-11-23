@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -27,6 +28,10 @@
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: 600;
 }
+.font-noto-700{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 700;
+}
 .font-plus-200{
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 200;
@@ -42,4 +47,20 @@
 .font-plus-500{
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 500;
+}
+.font-inter-300{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+.font-inter-400{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.font-inter-500{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+.font-inter-600{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
