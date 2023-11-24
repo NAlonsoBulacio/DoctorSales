@@ -1,0 +1,10 @@
+.button-options {
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; 
+      color: #ffffff;
+      border-radius: 12px;
+      position: relative;
+      display: inline-block;
+      transition: all 0.35s;
+    }
+    

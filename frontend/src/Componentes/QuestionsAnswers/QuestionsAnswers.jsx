@@ -9,8 +9,11 @@ const QuestionsAnswers = () => {
   };
 
   return (
-    <div className="w-full flex justify-center items-center">
-      <div className="w-[950px] flex flex-wrap justify-center items-center text-4xl space-y-4">
+    <div className="w-full flex justify-center items-center my-6">
+      <div className="w-full md:w-[950px] flex flex-wrap justify-center items-center text-xl md:text-4xl space-y-4 px-2">
+        <div className="w-full text-left">
+          <h1 className="text-4xl md:text-6xl font-bold text-purple-800">FAQ's</h1>
+        </div>
         <div className="w-full text-left">
           <button
             className="w-full py-4 px-4 flex justify-between items-center bg-gray-200 font-inter-600 space-x-2"
@@ -22,6 +25,7 @@ const QuestionsAnswers = () => {
               ¿Cuánto tiempo se tarda en obtener resultados?
             </span>
             <IoIosArrowDown
+            className="w-1/4 md:w-auto"
               style={{
                 transform: `rotate(${answer === "answer1" ? 180 : 0}deg)`,
                 transition: "transform 0.5s",
@@ -30,7 +34,7 @@ const QuestionsAnswers = () => {
           </button>
         </div>
         <div
-          className={`w-full answer text-2xl ${
+          className={`w-full answer text-xl md:text-2xl ${
             answer === "answer1" ? "show" : ""
           }`}
         >
@@ -49,6 +53,7 @@ const QuestionsAnswers = () => {
             ¿Funciona si vendo Software as a service?
             </span>
             <IoIosArrowDown
+             className="w-1/4 md:w-auto"
               style={{
                 transform: `rotate(${answer === "answer2" ? 180 : 0}deg)`,
                 transition: "transform 0.5s",
@@ -57,7 +62,7 @@ const QuestionsAnswers = () => {
           </button>
         </div>
         <div
-          className={`w-full answer text-2xl ${
+          className={`w-full answer text-xl md:text-2xl ${
             answer === "answer2" ? "show" : ""
           }`}
         >
@@ -74,6 +79,7 @@ const QuestionsAnswers = () => {
           >
               <span className="flex-grow text-left">¿Funciona si vendes productos de alto valor?</span>
               <IoIosArrowDown
+               className="w-1/4 md:w-auto"
                 style={{
                   transform: `rotate(${answer === "answer3" ? 180 : 0}deg)`,
                   transition: "transform 0.5s",
@@ -82,7 +88,7 @@ const QuestionsAnswers = () => {
           </button>
         </div>
         <div
-          className={`w-full answer text-2xl ${
+          className={`w-full answer text-xl md:text-2xl ${
             answer === "answer3" ? "show" : ""
           }`}
         >
@@ -93,13 +99,14 @@ const QuestionsAnswers = () => {
         </div>
         <div className="w-full">
           <button
-            className="w-full py-4 px-4 flex justify-between items-center bg-gray-200 font-inter-600 space-x-2"
+            className="w-full py-4 px-4 flex justify-between items-center bg-gray-200 font-inter-600 space-x-2 text-left"
             onClick={() => {
               answer !== "answer4" ? handleAnswer("answer4") : handleAnswer("");
             }}
           >
             ¿Y si no obtengo los resultados prometidos?{" "}
             <IoIosArrowDown
+             className="w-1/4 md:w-auto"
               style={{
                 transform: `rotate(${answer === "answer4" ? 180 : 0}deg)`,
                 transition: "transform 0.5s",
@@ -108,7 +115,7 @@ const QuestionsAnswers = () => {
           </button>
         </div>
         <div
-          className={`w-full answer text-2xl ${
+          className={`w-full answer text-xl md:text-2xl ${
             answer === "answer4" ? "show" : ""
           }`}
         >

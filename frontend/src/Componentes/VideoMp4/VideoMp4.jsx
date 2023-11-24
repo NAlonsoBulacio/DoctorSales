@@ -10,14 +10,14 @@ const VideoMp4 = () => {
     setPlaying(!playing);
   };
   return (
-    <div className="flex justify-center items-center ">
-      <div className="relative h-auto w-auto">
+    <div className="flex justify-center items-center">
+      <div className="relative h-full w-full md:h-[460px] md:w-[740px]">
       <ReactPlayer
         url={video}// Reemplaza con la URL de tu video
         playing={playing}
         controls
-        width="740px"
-        height="460px"
+        width="100%"
+        height="100%"
       />
         {!playing && (
         <div className="play-button" onClick={togglePlay}>
