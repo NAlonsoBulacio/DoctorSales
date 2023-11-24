@@ -4,7 +4,7 @@ import NavBar from "../NavBar/NavBar";
 import "./Header.css";
 const Header = () => {
   return (
-    <div className="header h-[79vh] lg:h-[84vh] xl:h-[96vh] w-full flex items-center justify-center relative">
+    <div className="header h-[58vh] lg:h-[84vh] xl:h-[96vh] w-full flex items-center justify-center relative">
       <div className="w-full h-full relative">
         <NavBar />
         <div className="w-full h-full overflow-hidden">
@@ -17,8 +17,8 @@ const Header = () => {
             />
           </div>
 
-          <div className="flex justify-center items-center absolute top-32 translate-x-0">
-            <div className="w-full md:w-2/3 space-y-12 px-3 md:px-0">
+          <div className="flex justify-center items-center absolute top-36 md:top-32 translate-x-0">
+            <div className="w-full md:w-2/3 space-y-6 md:space-y-12 px-3 md:px-0">
               <h1 className="font-noto-400 text-white text-2xl lg:text-5xl xl:text-6xl">
                 Cómo lograr que tu empresa Saas B2B sume más de 4 ventas al mes
                 gracias a nuestro método de Adquisición System, sin que dependa
@@ -36,7 +36,7 @@ const Header = () => {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 320"
-            className="absolute bottom-0"
+            className="absolute bottom-0 lg:bottom-[-40px] xl:bottom-0"
           >
             <path
               fill="#ffffff"
