@@ -4,7 +4,7 @@ import NavBar from "../NavBar/NavBar";
 import "./Header.css";
 const Header = () => {
   return (
-    <div className="header h-[58vh] lg:h-[84vh] xl:h-[96vh] w-full flex items-center justify-center relative">
+    <div className="header h-[60vh] lg:h-[84vh] xl:h-[96vh] w-full flex items-center justify-center relative">
       <div className="w-full h-full relative">
         <NavBar />
         <div className="w-full h-full overflow-hidden">
@@ -25,7 +25,7 @@ const Header = () => {
                 de tu esfuerzo.
               </h1>
               <div className="flex justify-center items-start space-x-4">
-                <h1 className="w-full font-noto-300 text-white text-lg md:text-2xl">
+                <h1 className="w-3/4 font-noto-300 text-white text-lg md:text-2xl">
                   En Doctor Sales, hemos desarrollado un sistema de adquisición
                   de clientes especialmente diseñado para empresas Saas como la
                   suya.

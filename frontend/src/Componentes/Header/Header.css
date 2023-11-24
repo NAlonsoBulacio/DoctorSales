@@ -3,3 +3,8 @@
   /* background-color: rgb(107, 33, 168); */
 }
 
+@media screen and (max-width: 400px) {
+  .header {
+    height: 76vh; /* Cambia el alto a 60vh para pantallas más pequeñas */
+  }
+}
