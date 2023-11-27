@@ -1,69 +1,46 @@
 import React, { useState } from "react";
-import "./Diagrama.css";
 import diagrama from "../../Multimedia/diagrama.png";
-import diagrama_chico from '../../Multimedia/diagrama2.png';
+import diagrama2 from "../../Multimedia/diagrama2.png";
 
 const Diagrama = () => {
-  const [isFullScreen, setIsFullScreen] = useState(false);
-  const [isZoomed, setIsZoomed] = useState(false);
-  const [posX, setPosX] = useState(0);
-  const [posY, setPosY] = useState(0);
-  const [startDragPos, setStartDragPos] = useState({ x: 0, y: 0 });
-  
+  const [showFullScreen, setShowFullScreen] = useState(false);
+
   const handleImageClick = () => {
-    if (!isFullScreen) {
-      setIsFullScreen(true);
-      setIsZoomed(false); // Resetear el zoom al abrir en pantalla completa
-    } else {
-      setIsZoomed(!isZoomed); // Alternar el estado de zoom al hacer clic en la imagen
-    }
+    setShowFullScreen(true);
+    // Aquí puedes deshabilitar el scroll de la página principal si es necesario
+    document.body.style.overflow = "hidden";
+  };
+  const handleButtonClick = () => {
+    setShowFullScreen(false);
+    // Aquí puedes deshabilitar el scroll de la página principal si es necesario
+    document.body.style.overflow = "auto";
   };
 
-  const handleExitFullScreen = () => {
-    setIsFullScreen(false);
-    setIsZoomed(false);
-  };
-
-  const handleDragStart = (e) => {
-    setStartDragPos({ x: e.clientX, y: e.clientY });
-    document.addEventListener('mousemove', handleDragging);
-    document.addEventListener('mouseup', handleDragEnd);
-  };
-
-  const handleDragging = (e) => {
-    const newX = e.clientX - startDragPos.x;
-    const newY = e.clientY - startDragPos.y;
-    setPosX(posX + newX);
-    setPosY(posY + newY);
-    setStartDragPos({ x: e.clientX, y: e.clientY });
-  };
-
-  const handleDragEnd = () => {
-    document.removeEventListener('mousemove', handleDragging);
-    document.removeEventListener('mouseup', handleDragEnd);
-  };
-  
   return (
-    <div className="full-screen-container">
-      {isFullScreen ? (
-        <div className="full-screen-overlay">
-          <button className="button-image" onClick={handleExitFullScreen}>X</button>
-          <img
-            className={`full-screen-image ${isZoomed ? 'full-screen-image-zoomed' : ''}`}
-            src={diagrama}
-            alt="Imagen en pantalla completa"
-            onClick={handleImageClick} // Controlar el zoom al hacer clic en la imagen
-            style={{ transform: `translate(${posX}px, ${posY}px)` }}
-            onMouseDown={handleDragStart}
-          />
+    <div className="w-full h-auto">
+      <img
+        src={diagrama2}
+        alt="Miniatura"
+        onClick={handleImageClick}
+        className="thumbnail-image"
+      />
+
+      {showFullScreen && (
+        <div className="fixed top-0 left-0 w-full h-full flex flex-wrap items-center justify-center z-50 bg-white bg-opacity-95 overflow-y-auto">
+            <button
+              onClick={handleButtonClick}
+              className="absolute top-4 right-10 z-10 font-semibold text-black text-5xl"
+            >
+              X
+            </button>
+          <div className="max-w-full h-auto relative">
+            <img
+              src={diagrama}
+              alt="Imagen Completa"
+              className="max-w-full h-auto"
+            />
+          </div>
         </div>
-      ) : (
-        <img
-          className="normal-image"
-          src={diagrama_chico}
-          alt="Imagen normal"
-          onClick={handleImageClick}
-        />
       )}
     </div>
   );
