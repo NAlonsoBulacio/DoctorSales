@@ -1,7 +1,17 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import PilaresDoctor from "../PilaresDoctor/PilaresDoctor";
+import { useInView } from "react-intersection-observer";
+import "./HelpYou.css";
 const HelpYou = () => {
+  const [ref1, inView1] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
   return (
     <div className="w-full bg-gray-100">
       <div className="flex justify-center">
@@ -9,20 +19,31 @@ const HelpYou = () => {
       </div>
       <div className="w-full h-auto bg-gray-100 relative flex justify-center items-center py-6 mt-4">
         <div className="w-4/5">
-          <h1 className="text-gray-900 text-2xl md:text-5xl font-plus-400 flex">
+          <h1
+            ref={ref1}
+            className={`${
+              inView1 ? "animate-help" : "initial-help"
+            } text-gray-900 text-2xl md:text-5xl font-plus-400 `}
+          >
             Si tu experiencia previa en marketing digital no te ha brindado los
             resultados que esperabas,
-            <br /> estamos aquí para ayudarte 🤝
+            <br />{" "}
+            <span className="text-purple-800 text-2xl md:text-5xl font-plus-400">
+              estamos aquí para ayudarte 🤝
+            </span>
           </h1>
         </div>
       </div>
       <PilaresDoctor />
       <div className="relative">
-      <div className="flex justify-center">
-        <hr className="border-t-2 border-purple-800 w-full" />
-      </div>
+        <div className="flex justify-center">
+          <hr className="border-t-2 border-purple-800 w-full" />
+        </div>
         <div className="flex flex-wrap justify-center items-center px-6 md:px-12 pt-8 bg-white">
-          <div className="w-full md:w-4/5 space-y-8 text-left">
+          <div 
+          ref={ref2}
+          className={`${inView2 ? "opacity-100 transition-opacity duration-[1s]"
+          : "opacity-0"} w-full md:w-4/5 space-y-8 text-left`}>
             <div className="flex items-start justify-start">
               <div className="mx-2 pt-2">
                 <FaCheckCircle className="check text-purple-800" />
@@ -33,7 +54,7 @@ const HelpYou = () => {
               </h1>
             </div>
             <div className="flex items-start">
-            <div className="mx-2 pt-2">
+              <div className="mx-2 pt-2">
                 <FaCheckCircle className="check text-purple-800" />
               </div>
               <h1 className="text-2xl md:text-3xl font-noto-300 text-gray-600">
@@ -42,7 +63,7 @@ const HelpYou = () => {
               </h1>
             </div>
             <div className="flex items-start">
-            <div className="mx-2 pt-2">
+              <div className="mx-2 pt-2">
                 <FaCheckCircle className="check text-purple-800" />
               </div>
               <h1 className="text-2xl md:text-3xl font-noto-300 text-gray-600">

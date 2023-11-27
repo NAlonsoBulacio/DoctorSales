@@ -1,7 +1,12 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import "./ProgramOffer.css";
+import { useInView } from "react-intersection-observer";
 const ProgramOffer = () => {
+  const [ref1, inView1] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
   return (
     <div
       className="w-full relative flex justify-center items-center py-2"
@@ -18,15 +23,17 @@ const ProgramOffer = () => {
           d="M0,32L80,42.7C160,53,320,75,480,74.7C640,75,800,53,960,58.7C1120,64,1280,96,1360,112L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
         ></path>
       </svg>
-      <div className="w-4/5 px-6 md:px-14 py-6 md:py-10 mt-10 md:mt-36 border-white border-2 rounded-xl flex justify-center items-center">
+      <div 
+      ref={ref1}
+      className={`${inView1 ? "opacity-100 transition-opacity duration-[1s]"
+      : "opacity-0"} w-4/5 px-6 md:px-14 py-6 md:py-10 mt-10 md:mt-36 border-white border-2 rounded-xl flex justify-center items-center`}>
         <div className="text-white space-y-6">
           <h1 className="w-full md:w-4/5 text-3xl md:text-4xl text-left mb-8 font-noto-600">
             Entonces, ¿Que incluye nuestro programa?
           </h1>
-          <div className="flex justify-start items-start space-x-4 text-left">
-          <div
-              className="w-[24px] md:w-[35px] h-[24px] md:h-[35px] flex items-center pt-1"
-            >
+          <div 
+          className={`flex justify-start items-start space-x-4 text-left`}>
+            <div className="w-[24px] md:w-[35px] h-[24px] md:h-[35px] flex items-center pt-1">
               <FaCheckCircle className="check" />
             </div>
             <div className="flex justify-start items-start">
@@ -37,9 +44,7 @@ const ProgramOffer = () => {
             </div>
           </div>
           <div className="flex justify-start items-start space-x-4 text-left">
-          <div
-              className="w-[24px] md:w-[35px] h-[24px] md:h-[35px] flex items-center pt-1"
-            >
+            <div className="w-[24px] md:w-[35px] h-[24px] md:h-[35px] flex items-center pt-1">
               <FaCheckCircle className="check" />
             </div>
             <p className="text-xl md:text-2xl">
@@ -47,9 +52,7 @@ const ProgramOffer = () => {
             </p>
           </div>
           <div className="flex justify-start items-start space-x-4 text-left">
-          <div
-              className="w-[24px] md:w-[35px] h-[24px] md:h-[35px] flex items-center pt-1"
-            >
+            <div className="w-[24px] md:w-[35px] h-[24px] md:h-[35px] flex items-center pt-1">
               <FaCheckCircle className="check" />
             </div>
             <p className="text-xl md:text-2xl">
@@ -58,9 +61,7 @@ const ProgramOffer = () => {
             </p>
           </div>
           <div className="flex justify-start items-start space-x-4 text-left">
-          <div
-              className="w-[24px] md:w-[35px] h-[24px] md:h-[35px] flex items-center pt-1"
-            >
+            <div className="w-[24px] md:w-[35px] h-[24px] md:h-[35px] flex items-center pt-1">
               <FaCheckCircle className="check" />
             </div>
             <p className="text-xl md:text-2xl">
@@ -69,9 +70,7 @@ const ProgramOffer = () => {
             </p>
           </div>
           <div className="flex justify-start items-start space-x-4 text-left">
-          <div
-              className="w-[24px] md:w-[35px] h-[24px] md:h-[35px] flex items-center pt-1"
-            >
+            <div className="w-[24px] md:w-[35px] h-[24px] md:h-[35px] flex items-center pt-1">
               <FaCheckCircle className="check" />
             </div>
             <p className="text-xl md:text-2xl">
@@ -80,9 +79,7 @@ const ProgramOffer = () => {
             </p>
           </div>
           <div className="flex justify-start items-start space-x-2 text-left">
-          <div
-              className="w-[24px] md:w-[35px] h-[24px] md:h-[35px] flex items-center pt-1"
-            >
+            <div className="w-[24px] md:w-[35px] h-[24px] md:h-[35px] flex items-center pt-1">
               <FaCheckCircle className="check" />
             </div>
             <p className="text-xl md:text-2xl">

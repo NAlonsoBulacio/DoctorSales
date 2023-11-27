@@ -1,4 +1,18 @@
-.check-purple{
-width: 35px;
-height: 35px;
+.check-purple {
+  width: 35px;
+  height: 35px;
 }
+
+.initial-help{
+  opacity: 0; /* Mantener opacidad inicial en 0 */
+}
+.animate-help {
+  opacity: 0; /* Mantener opacidad inicial en 0 */
+    animation: opacityAppear 1s ease-in-out forwards; /* La animación llevará el elemento de opacidad 0 a 1 */
+  }
+  
+  @keyframes opacityAppear {
+    to {
+      opacity: 1; /* La animación lleva la opacidad de 0 a 1 */
+    }
+  }

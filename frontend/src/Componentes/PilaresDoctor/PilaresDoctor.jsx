@@ -1,25 +1,63 @@
 import React from "react";
 import { FaBullhorn, FaChartLine, FaMedal } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
-import grafico from "../../Multimedia/diagrama2.png";
 import Diagrama from "../Diagrama/Diagrama";
+import { useInView } from "react-intersection-observer";
+import "./PilaresDoctor.css";
 const PilaresDoctor = () => {
+  const [ref1, inView1] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+  const [ref3, inView3] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+  const [ref4, inView4] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+  const [ref5, inView5] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+  const [ref6, inView6] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
   return (
     <div className="w-full flex justify-center items-center bg-gray-100 pb-16">
       <div>
         <div className="flex justify-center items-center">
           <hr className="border-t-2 border-purple-900 w-full md:w-[1300px] my-8" />
         </div>
-        <div className="px-4">
-          <h1 className="text-2xl text-gray-600 font-noto-300">
-            En Doctor Sales, nos enfocamos en establecer 4 pilares <br />
-            por los cuales hacemos
-            <br /> que tu negocio crezca:
+        <div className="px-4 flex justify-center">
+          <h1
+            ref={ref1}
+            className={`${
+              inView1
+                ? "opacity-100 transition-opacity duration-[1s]"
+                : "opacity-0"
+            } w-full md:w-1/2 text-2xl text-gray-600 font-noto-300`}
+          >
+            En Doctor Sales, nos enfocamos en establecer 4 pilares por los
+            cuales hacemos que tu negocio crezca:
           </h1>
         </div>
         <div className="flex flex-wrap justify-center items-center space-x-0 md:space-x-4 py-4">
           <div className="w-full flex flex-wrap justify-center items-start py-10 text-gray-600">
-            <div className="w-full md:w-2/5 px-14 flex items-start">
+            <div
+              ref={ref2}
+              className={`${
+                inView2
+                  ? "opacity-100 transition-opacity duration-[1s]"
+                  : "opacity-0"
+              } w-full md:w-2/5 px-14 flex items-start`}
+            >
               <div className="flex justify-center items-center">
                 <div className="px-0 md:px-4 space-y-4 mb-8 md:mb-0">
                   <div className="flex justify-center items-center">
@@ -48,7 +86,14 @@ const PilaresDoctor = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-2/5 px-14 flex items-start ">
+            <div
+              ref={ref3}
+              className={`${
+                inView3
+                  ? "opacity-100 transition-opacity duration-[1s]"
+                  : "opacity-0"
+              } w-full md:w-2/5 px-14 flex items-start`}
+            >
               <div className="flex justify-center items-start">
                 <div className="px-0 md:px-4 space-y-4 ">
                   <div className="flex justify-center items-start">
@@ -77,10 +122,16 @@ const PilaresDoctor = () => {
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-wrap justify-center items-start text-gray-600">
+          <div 
+          ref={ref4}
+          className={`${
+                inView4
+                  ? "opacity-100 transition-opacity duration-[1s]"
+                  : "opacity-0"
+              } w-full flex flex-wrap justify-center items-start text-gray-600`}>
             <div className="w-full md:w-2/5 px-14">
               <div className="flex justify-center items-start">
-              <div className="px-0 md:px-4 space-y-4 mb-8 md:mb-0">
+                <div className="px-0 md:px-4 space-y-4 mb-8 md:mb-0">
                   <div className="flex justify-center items-center">
                     <FaChartLine
                       style={{
@@ -106,7 +157,13 @@ const PilaresDoctor = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-2/5 px-14">
+            <div 
+            ref={ref5}
+            className={` ${
+                inView5
+                  ? "opacity-100 transition-opacity duration-[1s]"
+                  : "opacity-0"
+              } w-full md:w-2/5 px-14`}>
               <div className="flex justify-center items-start">
                 <div className="px-0 md:px-4 space-y-4 ">
                   <div className="flex justify-center items-center">
@@ -136,8 +193,15 @@ const PilaresDoctor = () => {
               </div>
             </div>
           </div>
-        </div> <div className="flex justify-center items-center py-3">
-          <div className="w-2/3 cursor-pointer">
+        </div>
+        <div className="flex justify-center items-center py-3">
+          <div 
+          ref={ref6}
+          className={`${
+            inView6
+              ? "opacity-100 transition-opacity duration-[1s]"
+              : "opacity-0"
+          } w-2/3 cursor-pointer`}>
             <Diagrama />
           </div>
         </div>

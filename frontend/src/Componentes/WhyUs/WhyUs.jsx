@@ -1,6 +1,26 @@
 import React from "react";
-
+import { useInView } from "react-intersection-observer";
 const WhyUs = () => {
+  const [ref1, inView1] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
+  const [ref3, inView3] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+  const [ref4, inView4] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+  const [ref5, inView5] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
   return (
     <div className="bg-gray-100">
       <div className="w-full bg-gray-100 relative flex justify-center items-center pt-10 md:pt-28">
@@ -17,12 +37,18 @@ const WhyUs = () => {
         </svg>
         <div className="flex flex-wrap justify-center items-start space-y-10">
           <div className="w-full">
-            <h1 className="text-5xl font-plus-500 text-gray-600">
+            <h1
+            ref={ref1}
+            className={`${inView1 ? "opacity-100 transition-opacity duration-[1s]"
+            : "opacity-0"} text-5xl font-plus-500 text-gray-600`}>
               Al agendar una llamada, vas a comprender:
             </h1>
           </div>
-          <div className="w-full md:w-4/5 px-14 py-10 bg-white border-white border-4 rounded-3xl flex flex-wrap justify-center items-start shadow-2xl mx-3 md:mx-0">
-            <div className="w-full md:w-1/4 px-2">
+          <div className="w-full md:w-4/5 px-14 py-10 bg-white border-white border-4 rounded-3xl flex flex-wrap justify-center items-start shadow-2xl mx-3 md:mx-0 space-y-3 md:space-y-0">
+            <div 
+            ref={ref2}
+            className={`${inView2 ? "opacity-100 transition-opacity duration-[1s]"
+            : "opacity-0"} w-full md:w-1/4 px-2`}>
               <div>
                 <h1 className="text-6xl text-purple-800 font-noto-600">1</h1>
               </div>
@@ -35,7 +61,10 @@ const WhyUs = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full md:w-1/4 px-2">
+            <div 
+            ref={ref3}
+            className={`${inView3 ? "opacity-100 transition-opacity duration-[1s]"
+            : "opacity-0"} w-full md:w-1/4 px-2`}>
               <div>
                 <h1 className="text-6xl text-purple-800 font-noto-600">2</h1>
               </div>
@@ -49,7 +78,10 @@ const WhyUs = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full md:w-1/4 px-2">
+            <div 
+            ref={ref4}
+            className={`${inView4 ? "opacity-100 transition-opacity duration-[1s]"
+            : "opacity-0"} w-full md:w-1/4 px-2`}>
               <div>
                 <h1 className="text-6xl text-purple-800 font-noto-600">3</h1>
               </div>
@@ -63,7 +95,10 @@ const WhyUs = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full md:w-1/4 px-2">
+            <div 
+            ref={ref5}
+            className={`${inView5 ? "opacity-100 transition-opacity duration-[1s]"
+            : "opacity-0"} w-full md:w-1/4 px-2`}>
               <div>
                 <h1 className="text-6xl text-purple-800 font-noto-600">4</h1>
               </div>

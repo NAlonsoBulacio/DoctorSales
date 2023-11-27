@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
-
+import "./Counter.css";
 const Counter = () => {
   const [count1, setCount1] = useState(10);
   const [count2, setCount2] = useState(0);
@@ -13,6 +13,10 @@ const Counter = () => {
   const [ref2, inView2] = useInView({
     triggerOnce: true,
     threshold: 0.5,
+  });
+  const [ref3, inView3] = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
   });
 
   const incrementCount = (currentCount, setCount, maxCount, increment) => {
@@ -43,11 +47,17 @@ const Counter = () => {
               ${count1}K
             </p>
             <div className="flex items-start justify-start">
-              <p className="text-lg">USD</p>
+              <p
+                ref={ref3}
+                className={`${inView3 ? "animatable-usd" : "initial-usd"} text-lg`}
+              >
+                USD
+              </p>
             </div>
           </div>
           <div className="w-full flex justify-center md:justify-start px-6">
-            <h1 className="font-noto-400 text-gray-600 text-lg md:text-2xl">
+            <h1 ref={ref3}
+             className={`${inView3 ? "animatable-type" : "initial-type"} font-noto-400 text-gray-600 text-lg md:text-2xl`}>
               Revenue
             </h1>
           </div>
@@ -61,11 +71,14 @@ const Counter = () => {
               ${count2.toLocaleString(undefined, { minimumFractionDigits: 1 })}K
             </p>
             <div className="flex items-start justify-start">
-            <p className="text-lg">USD</p>
+              <p ref={ref3}
+               className={`${inView3 ? "animatable-usd" : "initial-usd"} text-lg`}>USD</p>
             </div>
           </div>
           <div className="w-full flex justify-center md:justify-start px-6">
-            <h1 className="font-noto-400 text-gray-600 text-lg md:text-2xl">
+            <h1
+            ref={ref3}
+            className={`${inView3 ? "animatable-type" : "initial-type"} font-noto-400 text-gray-600 text-lg md:text-2xl`}>
               Expenses
             </h1>
           </div>
@@ -79,11 +92,13 @@ const Counter = () => {
               $0,00
             </p>
             <div className="flex items-start justify-start">
-            <p className="text-lg">USD</p>
+              <p ref={ref3}
+                className={`${inView3 ? "animatable-usd" : "initial-usd"} text-lg`}>USD</p>
             </div>
           </div>
           <div className="justify-center md:justify-start">
-            <h1 className="font-noto-400 text-gray-600 text-lg md:text-2xl">
+            <h1 ref={ref3}
+             className={`${inView3 ? "animatable-type" : "initial-type"} font-noto-400 text-gray-600 text-lg md:text-2xl`}>
               Dividends Released
             </h1>
           </div>
