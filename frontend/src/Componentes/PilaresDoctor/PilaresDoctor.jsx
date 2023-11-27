@@ -136,8 +136,7 @@ const PilaresDoctor = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex justify-center items-center py-3">
+        </div> <div className="flex justify-center items-center py-3">
           <div className="w-2/3 cursor-pointer">
             <Diagrama />
           </div>

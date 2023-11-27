@@ -15,7 +15,7 @@ const LandingPage = () => {
     <div>
       <Header />
       <VideoAndButton />
-        <HelpYou />
+      <HelpYou />
       <ProgramOffer />
       <WhyUs />
       <Contrast />

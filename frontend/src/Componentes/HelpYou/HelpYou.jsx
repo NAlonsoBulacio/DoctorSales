@@ -1,8 +1,6 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import PilaresDoctor from "../PilaresDoctor/PilaresDoctor";
-import value from "../../Multimedia/value.svg";
-import Diagrama from "../Diagrama/Diagrama";
 const HelpYou = () => {
   return (
     <div className="w-full bg-gray-100">
