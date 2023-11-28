@@ -23,7 +23,7 @@ const QuestionAndNumber = () => {
           initial="offscreen"
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.2 }}>
-            ¿Cómo reaccionaría si te dijera que hemos ayudado a un cliente a que
+            ¿Cómo reaccionarías si te dijera que hemos ayudado a un cliente a que
             logre esta facturación mensual?
           </motion.p>
         </div>

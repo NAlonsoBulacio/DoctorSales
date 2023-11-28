@@ -78,7 +78,7 @@ const PilaresDoctor = () => {
                   <p className="text-lg md:text-xl text-gray-600">
                     Implementamos nuestro sistema de adquisición de clientes y
                     ventas en tu empresa utilizando todas las plataformas con un
-                    equipo de: SDR(Sell Development Representative) , contenido
+                    equipo de: SDR (Sell Development Representative), contenido
                     orgánico y ADS. Así, no solo dependemos de la capacidad de
                     tu equipo de crecimiento, sino que también generamos un
                     nuevo activo de ventas para ti.
@@ -151,7 +151,7 @@ const PilaresDoctor = () => {
                     Contarás con un content manager profesional que se encargará
                     de todo el trabajo tedioso relacionado con la gestión del
                     contenido. Lo único que tendrás que hacer es aparecer en
-                    cámara durante una hora al día y cargar los videos para que
+                    cámara durante una hora a la semana y cargar los videos para que
                     él los edite y publique en tu nombre.
                   </p>
                 </div>

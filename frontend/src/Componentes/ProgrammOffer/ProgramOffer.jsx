@@ -56,15 +56,6 @@ const ProgramOffer = () => {
               <FaCheckCircle className="check" />
             </div>
             <p className="text-xl md:text-2xl">
-              Un módulo de capacitación para que tus comerciales aumenten la
-              tasa de conversión.
-            </p>
-          </div>
-          <div className="flex justify-start items-start space-x-4 text-left">
-            <div className="w-[24px] md:w-[35px] h-[24px] md:h-[35px] flex items-center pt-1">
-              <FaCheckCircle className="check" />
-            </div>
-            <p className="text-xl md:text-2xl">
               Un content manager que gestionará la estructuración, edición y
               promoción de tu contenido en tus redes sociales.
             </p>
