@@ -9,6 +9,7 @@ const VideoAndButton = () => {
       <div className="space-y-4">
         <VideoMp4 />
         <div className="flex justify-center items-center">
+          <a href="https://www.doctorsales.xyz/calendly">
           <button
             className="ov-btn-slide-left font-plus-400 max-w-[700px] bg-gradient-to-r from-purple-800 to-purple-900 text-white text-2xl py-2 px-4 rounded-xl mb-2 mx-4 "
             style={{
@@ -19,6 +20,7 @@ const VideoAndButton = () => {
           >
               Haz click para agendar una llamada
           </button>
+          </a>
         </div>
         <QuestionAndNumber />
       </div>

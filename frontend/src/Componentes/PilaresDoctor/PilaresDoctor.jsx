@@ -122,13 +122,14 @@ const PilaresDoctor = () => {
               </div>
             </div>
           </div>
-          <div 
-          ref={ref4}
-          className={`${
-                inView4
-                  ? "opacity-100 transition-opacity duration-[1s]"
-                  : "opacity-0"
-              } w-full flex flex-wrap justify-center items-start text-gray-600`}>
+          <div
+            ref={ref4}
+            className={`${
+              inView4
+                ? "opacity-100 transition-opacity duration-[1s]"
+                : "opacity-0"
+            } w-full flex flex-wrap justify-center items-start text-gray-600`}
+          >
             <div className="w-full md:w-2/5 px-14">
               <div className="flex justify-center items-start">
                 <div className="px-0 md:px-4 space-y-4 mb-8 md:mb-0">
@@ -151,19 +152,20 @@ const PilaresDoctor = () => {
                     Contarás con un content manager profesional que se encargará
                     de todo el trabajo tedioso relacionado con la gestión del
                     contenido. Lo único que tendrás que hacer es aparecer en
-                    cámara durante una hora a la semana y cargar los videos para que
-                    él los edite y publique en tu nombre.
+                    cámara durante una hora a la semana y cargar los videos para
+                    que él los edite y publique en tu nombre.
                   </p>
                 </div>
               </div>
             </div>
-            <div 
-            ref={ref5}
-            className={` ${
+            <div
+              ref={ref5}
+              className={` ${
                 inView5
                   ? "opacity-100 transition-opacity duration-[1s]"
                   : "opacity-0"
-              } w-full md:w-2/5 px-14`}>
+              } w-full md:w-2/5 px-14`}
+            >
               <div className="flex justify-center items-start">
                 <div className="px-0 md:px-4 space-y-4 ">
                   <div className="flex justify-center items-center">
@@ -195,26 +197,29 @@ const PilaresDoctor = () => {
           </div>
         </div>
         <div className="flex justify-center items-center py-3">
-          <div 
-          ref={ref6}
-          className={`${
-            inView6
-              ? "opacity-100 transition-opacity duration-[1s]"
-              : "opacity-0"
-          } w-2/3 cursor-pointer`}>
+          <div
+            ref={ref6}
+            className={`${
+              inView6
+                ? "opacity-100 transition-opacity duration-[1s]"
+                : "opacity-0"
+            } w-2/3 cursor-pointer`}
+          >
             <Diagrama />
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <button
-            className="ov-btn-slide-left font-plus-400 max-w-[700px] bg-gradient-to-r from-purple-800 to-purple-900 text-white text-2xl py-2 px-4 rounded-xl mb-2 mx-4 my-0 md:my-2"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            Haz click para agendar una llamada
-          </button>
+          <a href="https://www.doctorsales.xyz/calendly" target="_blank">
+            <button
+              className="ov-btn-slide-left font-plus-400 max-w-[700px] bg-gradient-to-r from-purple-800 to-purple-900 text-white text-2xl py-2 px-4 rounded-xl mb-2 mx-4 my-0 md:my-2"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              Haz click para agendar una llamada
+            </button>
+          </a>
         </div>
       </div>
     </div>
