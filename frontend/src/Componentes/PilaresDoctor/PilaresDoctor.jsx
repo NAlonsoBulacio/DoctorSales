@@ -256,13 +256,13 @@ const PilaresDoctor = () => {
         <div className="flex justify-center items-center">
           <a href="https://www.doctorsales.xyz/calendly">
             <button
-              className="ov-btn-slide-left font-plus-400 max-w-[700px] bg-gradient-to-r from-yellow-900 to-purple-900 text-white text-3xl py-2 px-4 rounded-xl mb-2 mx-4 my-0 md:my-2"
+              className="ov-btn-slide-left font-plus-400 max-w-[700px] bg-gradient-to-r from-yellow-900 to-purple-900 text-white text-2xl py-2 px-4 rounded-xl mb-2 mx-8 md:mx-4 my-0 md:my-2"
               style={{
                 display: "flex",
                 justifyContent: "center",
               }}
             >
-              Haz click para un análisis de tu Saas gratuito
+              HAZ CLICK PARA UN ANÁLISIS GRATUITO DE TU SAAS
             </button>
           </a>
         </div>
