@@ -22,12 +22,12 @@ const Header = () => {
                 Cómo lograr que tu empresa Saas B2B sume más de 4 ventas extras al mes
                 gracias a nuestro método de Acquisition System.
               </h1>
-              <div className="flex justify-center items-start">
+              <div className="flex justify-center items-start xl:px-44">
                 <h1 className="w-full font-noto-300 text-white text-lg md:text-xl lg:text-2xl">
                   En Doctor Sales, hemos desarrollado un sistema de adquisición
                   de clientes especialmente diseñado para empresas Saas como la
                   suya.
-                </h1>
+                </h1> 
               </div>
             </div>
           </div>
