@@ -12,7 +12,7 @@ const VideoMp4 = () => {
     <div className="flex justify-center items-center">
       <div className="relative w-full md:h-[460px] md:w-[740px]">
       <ReactPlayer
-        url="https://res.cloudinary.com/doczyujqf/video/upload/v1701212837/Doctor%20Sales/vsl_terminado_1_1_1_1_rxuous.mp4"
+        url="https://res.cloudinary.com/doczyujqf/video/upload/v1701287340/Doctor%20Sales/vsl_terminado_1_1_1_1_gipkj8.mp4"
         playing={playing}
         controls
         width="100%"
