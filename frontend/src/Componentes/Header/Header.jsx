@@ -4,7 +4,7 @@ import NavBar from "../NavBar/NavBar";
 import "./Header.css";
 const Header = () => {
   return (
-    <div className="header h-[54vh] lg:h-[73vh] xl:h-[92vh] 2xl:h-[88vh] w-full flex items-center justify-center relative">
+    <div className="header h-[54vh] lg:h-[73vh] xl:h-[87vh] 2xl:h-[80vh] w-full flex items-center justify-center relative">
       <div className="w-full h-full relative">
         <NavBar />
         <div className="w-full h-full overflow-hidden">
@@ -16,7 +16,6 @@ const Header = () => {
               className="w-full h-full object-cover"
             />
           </div>
-
           <div className="flex justify-center items-center absolute top-36 md:top-32 translate-x-0">
             <div className="w-full space-y-6 lg:space-y-12 px-3 mx-0 md:mx-20 md:px-0">
               <h1 className="font-noto-500 text-white text-2xl lg:text-5xl xl:text-6xl">
@@ -35,7 +34,7 @@ const Header = () => {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 320"
-            className="absolute bottom-0 lg:bottom-[-40px] xl:bottom-0"
+            className="wave absolute bottom-[-5px] xl:bottom-0"
           >
             <path
               fill="#ffffff"

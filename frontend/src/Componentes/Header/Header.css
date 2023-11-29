@@ -9,6 +9,15 @@
 }
 @media (min-width: 401px) and (max-width: 600px){
   .header {
-    height: 63vh; /* Cambia el alto a 60vh para pantallas más pequeñas */
+    height: 58vh; /* Cambia el alto a 60vh para pantallas más pequeñas */
+  }
+  .wave{
+    bottom: -5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    height: 70vh; /* Cambia el alto a 60vh para pantallas más pequeñas */
   }
 }
