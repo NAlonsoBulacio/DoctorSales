@@ -37,7 +37,7 @@ const Counter = () => {
 
   return (
     <div className="w-full flex justify-center items-center">
-      <div className="flex flex-wrap justify-center items-center px-10">
+      <div className="flex flex-wrap justify-center items-center px-10 notranslate">
         <div className="w-full md:w-1/3 flex flex-wrap justify-start items-center">
           <div
             ref={ref1}

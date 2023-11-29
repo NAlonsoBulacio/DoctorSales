@@ -11,14 +11,14 @@ const VideoAndButton = () => {
         <div className="flex justify-center items-center">
           <a href="https://www.doctorsales.xyz/calendly">
           <button
-            className="ov-btn-slide-left font-plus-400 max-w-[700px] bg-gradient-to-r from-purple-800 to-purple-900 text-white text-2xl py-2 px-4 rounded-xl mb-2 mx-4 "
+            className="ov-btn-slide-left font-plus-500 max-w-[700px] bg-gradient-to-r from-yellow-900 to-purple-900 text-white text-3xl py-2 px-4 rounded-xl mb-2 mx-4 "
             style={{
               marginBottom: "3rem",
               display: "flex",
               justifyContent: "center",
             }}
           >
-              Haz click para agendar una llamada
+              Haz click para un análisis de tu Saas gratuito
           </button>
           </a>
         </div>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
-import video from "../../Multimedia/video.mp4";
 import "./VideoMp4.css";
 import { FaPlay } from "react-icons/fa";
 const VideoMp4 = () => {
@@ -11,9 +10,9 @@ const VideoMp4 = () => {
   };
   return (
     <div className="flex justify-center items-center">
-      <div className="relative h-full w-full md:h-[460px] md:w-[740px]">
+      <div className="relative w-full md:h-[460px] md:w-[740px]">
       <ReactPlayer
-        url={video}// Reemplaza con la URL de tu video
+        url="https://res.cloudinary.com/doczyujqf/video/upload/v1701212837/Doctor%20Sales/vsl_terminado_1_1_1_1_rxuous.mp4"
         playing={playing}
         controls
         width="100%"
