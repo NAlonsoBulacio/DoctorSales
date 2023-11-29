@@ -7,8 +7,8 @@ const Thanks = () => {
         <img src={logo} alt="logo-doctor-sales" className="w-[96px]" />
       </div>
       <div className="py-8">
-        <div className="font-inter-500 px-32 space-y-4">
-          <h1 className="text-gray-800 text-5xl">
+        <div className="font-inter-500 px-14 md:px-32 space-y-4">
+          <h1 className="text-gray-800 text-3xl md:text-5xl">
             Felicidades por agendar tu llamada!
           </h1>
           <div className="flex justify-center items-center">
@@ -20,8 +20,8 @@ const Thanks = () => {
               Tu navegador no admite la reproducción de videos.
             </video>
           </div>
-          <p className="text-purple-800 font-inter-600 text-5xl">IMPORTANTE</p>
-          <p className="text-gray-800 text-4xl">
+          <p className="text-purple-800 font-inter-600 text-3xl md:text-5xl">IMPORTANTE</p>
+          <p className="text-gray-800 text-2xl md:text-4xl">
             Te estaremos contactando para confirmar tu sesión, si no contestas
             le daremos tu lugar a otra persona que este lista.
           </p>
