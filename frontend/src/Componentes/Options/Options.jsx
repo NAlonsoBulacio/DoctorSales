@@ -46,9 +46,9 @@ const Options = () => {
                   whileInView="onscreen"
                   viewport={{ once: true, amount: 0.2 }}
                   whileHover={{ scale: 1.1 }}
-                  className="button-options flex justify-center items-center h-auto md:h-32 font-noto-400 max-w-[700px] bg-gradient-to-r from-yellow-900 to-purple-900 text-white text-xl py-2 px-3 rounded-xl transition duration-300 ease-in-out transform hover:scale-105"
+                  className="button-options flex justify-center items-center h-auto md:h-32 font-noto-400 max-w-[700px] bg-gradient-to-r from-yellow-700 to-yellow-800 text-white text-xl py-2 px-3 rounded-xl transition duration-300 ease-in-out transform hover:scale-105"
                 >
-                  📅Agendar una llamada y evaluar la posibilidad de crecer sin
+                  📅 Agendar una llamada y evaluar la posibilidad de crecer sin
                   ningún tipo de riesgo ya que te garantizamos los resultados
                   para ser rentable. 📅
                 </motion.button>
