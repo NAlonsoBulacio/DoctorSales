@@ -1,10 +1,14 @@
 .shadow-place {
   background-color: rgba(63, 7, 98, 0.8);
-  /* background-color: rgb(107, 33, 168); */
 }
 
 @media screen and (max-width: 400px) {
   .header {
-    height: 76vh; /* Cambia el alto a 60vh para pantallas más pequeñas */
+    height: 70vh; /* Cambia el alto a 60vh para pantallas más pequeñas */
+  }
+}
+@media (min-width: 401px) and (max-width: 600px){
+  .header {
+    height: 63vh; /* Cambia el alto a 60vh para pantallas más pequeñas */
   }
 }

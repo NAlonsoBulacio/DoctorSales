@@ -22,7 +22,7 @@ const Diagrama = () => {
         src={diagrama2}
         alt="Miniatura"
         onClick={handleImageClick}
-        className="thumbnail-image"
+        className="w-full"
       />
 
       {showFullScreen && (

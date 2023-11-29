@@ -4,7 +4,7 @@ import NavBar from "../NavBar/NavBar";
 import "./Header.css";
 const Header = () => {
   return (
-    <div className="header h-[60vh] lg:h-[84vh] xl:h-[103vh] 2xl:h-[96vh] w-full flex items-center justify-center relative">
+    <div className="header h-[54vh] lg:h-[73vh] xl:h-[92vh] 2xl:h-[88vh] w-full flex items-center justify-center relative">
       <div className="w-full h-full relative">
         <NavBar />
         <div className="w-full h-full overflow-hidden">
@@ -18,14 +18,14 @@ const Header = () => {
           </div>
 
           <div className="flex justify-center items-center absolute top-36 md:top-32 translate-x-0">
-            <div className="w-full md:w-2/3 space-y-6 md:space-y-12 px-3 md:px-0">
-              <h1 className="font-noto-400 text-white text-2xl lg:text-5xl xl:text-6xl">
+            <div className="w-full space-y-6 lg:space-y-12 px-3 mx-0 md:mx-20 md:px-0">
+              <h1 className="font-noto-500 text-white text-2xl lg:text-5xl xl:text-6xl">
                 Cómo lograr que tu empresa Saas B2B sume más de 4 ventas al mes
                 gracias a nuestro método de Acquisition System, sin que dependa
                 de tu esfuerzo.
               </h1>
               <div className="flex justify-center items-start">
-                <h1 className="w-full font-noto-300 text-white text-lg md:text-2xl">
+                <h1 className="w-full font-noto-300 text-white text-lg md:text-xl lg:text-2xl">
                   En Doctor Sales, hemos desarrollado un sistema de adquisición
                   de clientes especialmente diseñado para empresas Saas como la
                   suya.
@@ -41,7 +41,7 @@ const Header = () => {
             <path
               fill="#ffffff"
               fill-opacity="1"
-              d="M0,256L60,240C120,224,240,192,360,192C480,192,600,224,720,240C840,256,960,256,1080,245.3C1200,235,1320,213,1380,202.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+              d="M0,256L80,250.7C160,245,320,235,480,245.3C640,256,800,288,960,277.3C1120,267,1280,213,1360,186.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
             ></path>
           </svg>
         </div>
