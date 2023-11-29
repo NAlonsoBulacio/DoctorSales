@@ -21,7 +21,6 @@ const VideoAndButton = () => {
           </a>
         </div>
         <VideoMp4 />
-
         <QuestionAndNumber />
       </div>
     </div>
