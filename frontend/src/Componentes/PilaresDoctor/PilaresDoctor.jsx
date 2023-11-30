@@ -29,6 +29,9 @@ const PilaresDoctor = () => {
     triggerOnce: true,
     threshold: 0.5,
   });
+  const handleButton = () => {
+    window.fbq("track", "ViewContent");
+  };
   return (
     <div className="w-full flex justify-center items-center bg-gray-100 pb-16">
       <div>
@@ -261,6 +264,7 @@ const PilaresDoctor = () => {
                 display: "flex",
                 justifyContent: "center",
               }}
+              onClick={handleButton}
             >
               HAZ CLICK PARA UN ANÁLISIS GRATUITO DE TU SAAS
             </button>

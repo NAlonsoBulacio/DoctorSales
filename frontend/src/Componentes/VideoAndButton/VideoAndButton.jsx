@@ -4,6 +4,9 @@ import QuestionAndNumber from "../QuestionAndNumber/QuestionAndNumber";
 import "./VideoAndButton.css";
 
 const VideoAndButton = () => {
+  const handleButton = () => {
+    window.fbq("track", "ViewContent");
+  };
   return (
     <div className="w-full h-auto flex justify-center items-start ">
       <div className="space-y-4">
@@ -15,6 +18,7 @@ const VideoAndButton = () => {
               display: "flex",
               justifyContent: "center",
             }}
+            onClick={handleButton}
           >
               HAZ CLICK PARA UN ANÁLISIS GRATUITO DE TU SAAS
           </button>

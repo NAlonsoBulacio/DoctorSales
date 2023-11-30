@@ -21,6 +21,9 @@ const WhyUs = () => {
     triggerOnce: true,
     threshold: 0.5,
   });
+  const handleButton = () => {
+    window.fbq("track", "ViewContent");
+  };
   return (
     <div className="bg-gray-100">
       <div className="w-full bg-gray-100 relative flex justify-center items-center pt-10 md:pt-28">
@@ -143,6 +146,7 @@ const WhyUs = () => {
               display: "flex",
               justifyContent: "center",
             }}
+            onClick={handleButton}
           >
             Haz click para agendar una llamada
           </button>
