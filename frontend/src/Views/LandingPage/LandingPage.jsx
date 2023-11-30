@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../Componentes/Header/Header";
 import VideoAndButton from "../../Componentes/VideoAndButton/VideoAndButton";
 import HelpYou from "../../Componentes/HelpYou/HelpYou";
@@ -9,8 +9,18 @@ import AnswersContrast from "../../Componentes/AnswersContrast/AnswersContrast";
 import QuestionsAnswers from "../../Componentes/QuestionsAnswers/QuestionsAnswers";
 import Footer from "../../Componentes/Footer/Footer";
 import Options from "../../Componentes/Options/Options";
+import WhatsAppButton from "../../Componentes/Whatsapp/WhatsappButton";
 import "./LandingPage.css";
 const LandingPage = () => {
+  useEffect(() => {
+    const thirtySecondsTimeout = setTimeout(() => {
+      window.fbq('trackCustom', 'ThirtySecondsOnPage');
+    }, 30000); 
+
+    return () => {
+      clearTimeout(thirtySecondsTimeout);
+    };
+  }, []);
   return (
     <div>
       <Header />
@@ -22,6 +32,7 @@ const LandingPage = () => {
       <AnswersContrast />
       <QuestionsAnswers />
       <Options />
+      <WhatsAppButton />
       <Footer />
     </div>
   );

@@ -1,32 +1,57 @@
-import React, { useState } from 'react';
-import ReactPlayer from 'react-player';
+import React, { useState, useRef  } from "react";
+import ReactPlayer from "react-player";
 import "./VideoMp4.css";
 import { FaPlay } from "react-icons/fa";
 const VideoMp4 = () => {
   const [playing, setPlaying] = useState(false);
-
+  const [viewed10Progress, setViewed10Progress] = useState(false);
+  const [viewed60Progress, setViewed60Progress] = useState(false);
+  const [viewedFull, setViewedFull] = useState(false);
+  const playerRef = useRef(null);
   const togglePlay = () => {
-    if (!playing){
-      window.fbq('track', 'ViewContent');
-      window.fbq('trackCustom', 'VideoPlay');
-    setPlaying(!playing);
-  }
+    if (!playing) {
+      window.fbq("track", "ViewContent");
+      window.fbq("trackCustom", "VideoPlay");
+      console.log("Acabas de mandar estos eventos");
+      setPlaying(!playing);
+    }
+  };
+  const handleProgress = (progress) => {
+    const { playedSeconds } = progress;
+    if (playedSeconds >= 10 && !viewed10Progress) {
+      console.log("10 segundos progress");
+      window.fbq('trackCustom', 'VideoViewed10Progress');
+      setViewed10Progress(true); 
+    }
+    if (playedSeconds >= 60 && !viewed60Progress) {
+      console.log("60 segundos progress");
+      window.fbq('trackCustom', 'VideoViewed60Progress');
+      setViewed60Progress(true); 
+    }
+    if (playedSeconds >= 180 && !viewedFull) {
+      console.log("180 segundos progress");
+      window.fbq('trackCustom', 'VideoViewedFull');
+      setViewedFull(true); 
+    }
   };
   return (
     <div className="flex justify-center items-center">
       <div className="relative w-full md:h-[460px] md:w-[740px]">
-      <ReactPlayer
-        url="https://res.cloudinary.com/doczyujqf/video/upload/v1701287340/Doctor%20Sales/vsl_terminado_1_1_1_1_gipkj8.mp4"
-        playing={playing}
-        controls
-        width="100%"
-        height="100%"
-      />
+        <ReactPlayer
+          ref={playerRef}
+          url="https://res.cloudinary.com/doczyujqf/video/upload/v1701287340/Doctor%20Sales/vsl_terminado_1_1_1_1_gipkj8.mp4"
+          playing={playing}
+          controls
+          width="100%"
+          height="100%"
+          onPlay={togglePlay}
+          onProgress={handleProgress}
+        />
         {!playing && (
-        <button className="play-button" onClick={togglePlay}>
-          <FaPlay />
-        </button>
-      )}
+          <button className="play-button" onClick={togglePlay}>
+            <FaPlay />
+          </button>
+        )}
       </div>
     </div>
   );

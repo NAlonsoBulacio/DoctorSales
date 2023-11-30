@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 const Options = () => {
   const variants = {
     offscreen: {
@@ -19,7 +19,9 @@ const Options = () => {
       },
     },
   };
-
+  const handleButton = () => {
+    window.fbq("track", "ViewContent");
+  };
   return (
     <div className="w-full my-8 md:my-20">
       <div className="px-8 md:px-20 space-y-4">
@@ -39,7 +41,9 @@ const Options = () => {
           </div>
           <div className="w-full md:w-2/5">
             <div className="flex justify-center items-center">
-              <a href="https://www.doctorsales.xyz/calendly">
+              <a href="https://www.doctorsales.xyz/calendly"
+              onClick={handleButton}
+              >
                 <motion.button
                   variants={variants}
                   initial="offscreen"
