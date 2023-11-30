@@ -24,7 +24,7 @@
 
 @media (min-height: 700px) and (min-width: 1280px){
   .header {
-    height: 87vh; /* Cambia el alto a 60vh para pantallas más pequeñas */
+    height: 78vh; /* Cambia el alto a 60vh para pantallas más pequeñas */
   }
   .wave{
     bottom: -5px;
