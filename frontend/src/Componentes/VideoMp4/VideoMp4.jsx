@@ -6,7 +6,11 @@ const VideoMp4 = () => {
   const [playing, setPlaying] = useState(false);
 
   const togglePlay = () => {
+    if (!playing){
+      window.fbq('track', 'ViewContent');
+      window.fbq('trackCustom', 'VideoPlay');
     setPlaying(!playing);
+  }
   };
   return (
     <div className="flex justify-center items-center">
@@ -19,9 +23,9 @@ const VideoMp4 = () => {
         height="100%"
       />
         {!playing && (
-        <div className="play-button" onClick={togglePlay}>
+        <button className="play-button" onClick={togglePlay}>
           <FaPlay />
-        </div>
+        </button>
       )}
       </div>
     </div>
