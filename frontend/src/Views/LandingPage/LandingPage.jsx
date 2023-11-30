@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../Componentes/Header/Header";
 import VideoAndButton from "../../Componentes/VideoAndButton/VideoAndButton";
 import HelpYou from "../../Componentes/HelpYou/HelpYou";
@@ -12,15 +12,31 @@ import Options from "../../Componentes/Options/Options";
 import WhatsAppButton from "../../Componentes/Whatsapp/WhatsappButton";
 import "./LandingPage.css";
 const LandingPage = () => {
+  const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const thirtySecondsTimeout = setTimeout(() => {
-      window.fbq('trackCustom', 'ThirtySecondsOnPage');
-    }, 30000); 
+      if (!scrolled) {
+        window.fbq('trackCustom', 'ThirtySecondsOnPage');
+        setScrolled(true);
+      }
+    }, 30000);
+
+    const handleScroll = () => {
+      if (!scrolled) {
+        window.fbq("trackCustom", "Scrolled");
+        setScrolled(true);
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
       clearTimeout(thirtySecondsTimeout);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [scrolled]);
   return (
     <div>
       <Header />

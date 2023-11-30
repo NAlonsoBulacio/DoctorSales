@@ -6,7 +6,7 @@ const Options = () => {
       scale: 1,
     },
     onscreen: {
-      rotate:[ 25,-25, 0], // Rotación inicial
+      rotate:[ 25,-25, 0],
       transition: {
         duration: 1,
       },
