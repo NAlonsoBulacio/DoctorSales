@@ -4,7 +4,7 @@ import NavBar from "../NavBar/NavBar";
 import "./Header.css";
 const Header = () => {
   return (
-    <div className="header h-[54vh] lg:h-[73vh] xl:h-[87vh] 2xl:h-[80vh] w-full flex items-center justify-center relative">
+    <div className="header h-[54vh] lg:h-[73vh] 2xl:h-[80vh] w-full flex items-center justify-center relative">
       <div className="w-full h-full relative">
         <NavBar />
         <div className="w-full h-full overflow-hidden">
@@ -19,8 +19,7 @@ const Header = () => {
           <div className="flex justify-center items-center absolute top-36 md:top-32 translate-x-0">
             <div className="w-full space-y-6 lg:space-y-12 px-3 mx-0 md:mx-20 md:px-0">
               <h1 className="font-noto-500 text-white text-2xl lg:text-5xl xl:text-6xl">
-                Cómo lograr que tu empresa Saas B2B sume más de 4 ventas extras al mes
-                gracias a nuestro método de Acquisition System.
+                CÓMO AGREGAR A TU EMPRESA SAAS B2B, MÁS DE $2000 DÓLARES EXTRAS TODOS LOS MESES CON NUESTRO MÉTODO ACQUISITION SYSTEM EN AUTOMÁTICO 
               </h1>
               <div className="flex justify-center items-start xl:px-44">
                 <h1 className="w-full font-noto-300 text-white text-lg md:text-xl lg:text-2xl">
