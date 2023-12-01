@@ -9,7 +9,7 @@
 }
 @media (min-width: 401px) and (max-width: 600px){
   .header {
-    height: 40vh; 
+    height: 44vh; 
   }
   .wave{
     bottom: -5px;
