@@ -18,7 +18,7 @@ const Header = () => {
           </div>
           <div className="flex justify-center items-center absolute top-36 md:top-32 translate-x-0">
             <div className="w-full space-y-6 lg:space-y-12 px-3 mx-0 md:mx-20 md:px-0">
-              <h1 className="font-noto-500 text-white text-2xl lg:text-5xl xl:text-6xl">
+              <h1 className="font-noto-500 text-white text-2xl lg:text-5xl xl:text-6xl"  style={{ lineHeight: '1.2' }}>
                 CÓMO AGREGAR A TU EMPRESA SAAS B2B, MÁS DE $2000 DÓLARES EXTRAS TODOS LOS MESES CON NUESTRO MÉTODO ACQUISITION SYSTEM EN AUTOMÁTICO 
               </h1>
               <div className="flex justify-center items-start xl:px-44">
