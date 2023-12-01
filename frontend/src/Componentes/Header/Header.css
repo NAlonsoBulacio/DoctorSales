@@ -9,7 +9,7 @@
 }
 @media (min-width: 401px) and (max-width: 600px){
   .header {
-    height: 58vh; /* Cambia el alto a 60vh para pantallas más pequeñas */
+    height: 40vh; 
   }
   .wave{
     bottom: -5px;
@@ -24,7 +24,7 @@
 
 @media (min-height: 700px) and (min-width: 1280px){
   .header {
-    height: 78vh; /* Cambia el alto a 60vh para pantallas más pequeñas */
+    height: 81vh; /* Cambia el alto a 60vh para pantallas más pequeñas */
   }
   .wave{
     bottom: -5px;
