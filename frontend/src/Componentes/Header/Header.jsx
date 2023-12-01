@@ -21,13 +21,6 @@ const Header = () => {
               <h1 className="font-noto-500 text-white text-2xl lg:text-5xl xl:text-6xl"  style={{ lineHeight: '1.2' }}>
                 CÓMO AGREGAR A TU EMPRESA SAAS B2B, MÁS DE $2000 DÓLARES EXTRAS TODOS LOS MESES CON NUESTRO MÉTODO ACQUISITION SYSTEM EN AUTOMÁTICO 
               </h1>
-              <div className="flex justify-center items-start xl:px-44">
-                <h1 className="w-full font-noto-300 text-white text-lg md:text-xl lg:text-2xl">
-                  En Doctor Sales, hemos desarrollado un sistema de adquisición
-                  de clientes especialmente diseñado para empresas Saas como la
-                  suya.
-                </h1> 
-              </div>
             </div>
           </div>
           <svg
