@@ -10,7 +10,15 @@ const VideoAndButton = () => {
   return (
     <div className="w-full h-auto flex justify-center items-start ">
       <div className="space-y-4">
-
+        <div className="flex justify-center items-start px-10 xl:px-72 my-3">
+          <h1 className="w-full font-inter-500 text-gray-700 text-xl md:text-2xl lg:text-3xl">
+             En <span className="text-purple-800">Doctor Sales</span>, hemos
+            desarrollado un sistema de{" "}
+            <span className="text-purple-800">adquisición de clientes</span>{" "}
+            especialmente diseñado para empresas{" "}
+            <span className="text-purple-800">Saas</span> como la suya 🚀
+          </h1>
+        </div>
         <VideoMp4 />
         <div className="flex justify-center items-center">
           <a href="https://www.doctorsales.xyz/calendly">
