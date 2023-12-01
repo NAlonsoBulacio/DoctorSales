@@ -10,6 +10,7 @@ import QuestionsAnswers from "../../Componentes/QuestionsAnswers/QuestionsAnswer
 import Footer from "../../Componentes/Footer/Footer";
 import Options from "../../Componentes/Options/Options";
 import WhatsAppButton from "../../Componentes/Whatsapp/WhatsappButton";
+import ContactUs from '../../Componentes/ContactUs/ContactUs'
 import "./LandingPage.css";
 const LandingPage = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -48,6 +49,7 @@ const LandingPage = () => {
       <AnswersContrast />
       <QuestionsAnswers />
       <Options />
+      <ContactUs />
       <WhatsAppButton />
       <Footer />
     </div>
