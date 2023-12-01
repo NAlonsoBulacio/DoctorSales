@@ -2,6 +2,7 @@ import React, { useState, useRef  } from "react";
 import ReactPlayer from "react-player";
 import "./VideoMp4.css";
 import { FaPlay } from "react-icons/fa";
+import frame from '../../Multimedia/frame.png'
 const VideoMp4 = () => {
   const [playing, setPlaying] = useState(false);
   const [viewed10Progress, setViewed10Progress] = useState(false);
@@ -36,7 +37,7 @@ const VideoMp4 = () => {
   };
   return (
     <div className="flex justify-center items-center">
-      <div className="relative w-full md:h-[460px] md:w-[740px]">
+      <div className="relative w-full md:h-[420px] md:w-[740px] overflow-hidden">
         <ReactPlayer
           ref={playerRef}
           url="https://res.cloudinary.com/doczyujqf/video/upload/v1701287340/Doctor%20Sales/vsl_terminado_1_1_1_1_gipkj8.mp4"
@@ -48,9 +49,12 @@ const VideoMp4 = () => {
           onProgress={handleProgress}
         />
         {!playing && (
+          <>
+          <img src={frame} alt="frame-video" className={`absolute inset-0 w-full h-full object-cover object-center opacity-transition ${playing ? 'opacity-0' : 'opacity-100'}`}/>
           <button className="play-button" onClick={togglePlay}>
             <FaPlay />
           </button>
+          </>
         )}
       </div>
     </div>
