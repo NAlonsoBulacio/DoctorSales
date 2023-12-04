@@ -30,3 +30,23 @@
     bottom: -5px;
   }
 }
+
+@media (min-height: 500px) and (min-width: 1078px) and (max-width: 1279px){
+  .header {
+    height: 87vh; /* Cambia el alto a 60vh para pantallas más pequeñas */
+  }
+  .wave{
+    bottom: -5px;
+  }
+}
+@media (min-height: 500px) and (min-width: 1024) and (max-width: 1077px){
+  .header {
+    height: 96vh; /* Cambia el alto a 60vh para pantallas más pequeñas */
+  }
+  .wave{
+    bottom: -5px;
+  }
+  .titulo{
+    font-size: 48px;
+  }
+}
