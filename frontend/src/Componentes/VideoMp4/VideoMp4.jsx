@@ -4,6 +4,7 @@ import "./VideoMp4.css";
 import frame from '../../Multimedia/potencia.png'
 const VideoMp4 = () => {
   const [playing, setPlaying] = useState(false);
+  const [start, setStart] = useState(false);
   const [viewed10Progress, setViewed10Progress] = useState(false);
   const [viewed60Progress, setViewed60Progress] = useState(false);
   const [viewedFull, setViewedFull] = useState(false);
@@ -12,24 +13,23 @@ const VideoMp4 = () => {
     if (!playing) {
       window.fbq("track", "ViewContent");
       window.fbq("trackCustom", "VideoPlay");
-      console.log("Acabas de mandar estos eventos");
       setPlaying(!playing);
+      setTimeout(() => {
+        setStart(true);
+      }, 1000);
     }
   };
   const handleProgress = (progress) => {
     const { playedSeconds } = progress;
     if (playedSeconds >= 10 && !viewed10Progress) {
-      console.log("10 segundos progress");
       window.fbq('trackCustom', 'VideoViewed10Progress');
       setViewed10Progress(true); 
     }
     if (playedSeconds >= 60 && !viewed60Progress) {
-      console.log("60 segundos progress");
       window.fbq('trackCustom', 'VideoViewed60Progress');
       setViewed60Progress(true); 
     }
     if (playedSeconds >= 180 && !viewedFull) {
-      console.log("180 segundos progress");
       window.fbq('trackCustom', 'VideoViewedFull');
       setViewedFull(true); 
     }
@@ -42,7 +42,7 @@ const VideoMp4 = () => {
           : <ReactPlayer
           ref={playerRef}
           url="https://res.cloudinary.com/doczyujqf/video/upload/v1701287340/Doctor%20Sales/vsl_terminado_1_1_1_1_gipkj8.mp4"
-          playing={playing}
+          playing={start}
           controls
           width="100%"
           height="100%"
