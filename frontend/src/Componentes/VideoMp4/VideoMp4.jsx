@@ -49,7 +49,7 @@ const VideoMp4 = () => {
         />
         {!playing && (
           <>
-          <img src={frame} alt="frame-video" onClick={togglePlay} className={`absolute inset-0 w-full h-full object-cover object-center opacity-transition ${playing ? 'opacity-0' : 'opacity-100'}`}/>
+          <img src={frame} alt="frame-video" onClick={togglePlay} className={`play-button`}/>
           {/* <button className="play-button" onClick={togglePlay}>
             <FaPlay />
           </button> */}
