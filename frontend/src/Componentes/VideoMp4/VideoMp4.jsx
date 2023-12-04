@@ -37,7 +37,9 @@ const VideoMp4 = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="relative w-full md:h-[420px] md:w-[740px] overflow-hidden">
-        <ReactPlayer
+      {!playing ? (
+          <img src={frame} alt="frame-video" onClick={togglePlay} className={`play-button`}/>)
+          : <ReactPlayer
           ref={playerRef}
           url="https://res.cloudinary.com/doczyujqf/video/upload/v1701287340/Doctor%20Sales/vsl_terminado_1_1_1_1_gipkj8.mp4"
           playing={playing}
@@ -46,15 +48,9 @@ const VideoMp4 = () => {
           height="100%"
           onPlay={togglePlay}
           onProgress={handleProgress}
-        />
-        {!playing && (
-          <>
-          <img src={frame} alt="frame-video" onClick={togglePlay} className={`play-button`}/>
-          {/* <button className="play-button" onClick={togglePlay}>
-            <FaPlay />
-          </button> */}
-          </>
-        )}
+        />}
+
+
       </div>
     </div>
   );
