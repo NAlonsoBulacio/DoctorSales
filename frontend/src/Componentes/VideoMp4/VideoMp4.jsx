@@ -39,15 +39,14 @@ const VideoMp4 = () => {
       <div className="relative w-full md:h-[420px] md:w-[740px] overflow-hidden">
         {!playing ? (
           <div style={{ position: "relative", cursor: "pointer", width: "100%", height: "100%" }}>
-            <ReactPlayer
-              url="https://res.cloudinary.com/doczyujqf/video/upload/v1701724332/Doctor%20Sales/video_sinn_audio_sxpi7j.mp4"
-              playing={playingLoop}
-              loop
+            <video
+              // ref={videoRef}
+              className="w-full h-full"
+              src="https://res.cloudinary.com/doczyujqf/video/upload/v1701724332/Doctor%20Sales/video_sinn_audio_sxpi7j.mp4"
+              autoPlay
               muted
-              width="100%"
-              height="100%"
+              loop
               onClick={togglePlay}
-              style={{ display: "block" }}
             />
             <button
               onClick={togglePlay}
