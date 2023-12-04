@@ -1,15 +1,23 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import ReactPlayer from "react-player";
 import "./VideoMp4.css";
 import { FaPlay } from "react-icons/fa";
 const VideoMp4 = () => {
   const [playing, setPlaying] = useState(false);
-  const [playingLoop, setPlayingLoop] = useState(true);
+  const [playingLoop, setPlayingLoop] = useState(false);
   const [videoClicked, setVideoClicked] = useState(false);
   const [viewed10Progress, setViewed10Progress] = useState(false);
   const [viewed60Progress, setViewed60Progress] = useState(false);
   const [viewedFull, setViewedFull] = useState(false);
   const playerRef = useRef(null);
+
+  useEffect(() => {
+    if (!playingLoop) {
+      setTimeout(() => {
+        setPlayingLoop(true);
+      }, 2000);
+    }
+  }, [playingLoop]);
 
   const togglePlay = () => {
     if (!playing && !videoClicked) {
@@ -39,14 +47,15 @@ const VideoMp4 = () => {
       <div className="relative w-full md:h-[420px] md:w-[740px] overflow-hidden">
         {!playing ? (
           <div style={{ position: "relative", cursor: "pointer", width: "100%", height: "100%" }}>
-            <video
-              // ref={videoRef}
-              className="w-full h-full"
-              src="https://res.cloudinary.com/doczyujqf/video/upload/v1701724332/Doctor%20Sales/video_sinn_audio_sxpi7j.mp4"
-              autoPlay
-              muted
+            <ReactPlayer
+              url="https://res.cloudinary.com/doczyujqf/video/upload/v1701724332/Doctor%20Sales/video_sinn_audio_sxpi7j.mp4"
+              playing={playingLoop}
               loop
+              muted
+              width="100%"
+              height="100%"
               onClick={togglePlay}
+              style={{ display: "block" }}
             />
             <button
               onClick={togglePlay}
