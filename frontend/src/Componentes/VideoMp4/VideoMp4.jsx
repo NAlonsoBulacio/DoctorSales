@@ -16,7 +16,7 @@ const VideoMp4 = () => {
       setPlaying(!playing);
       setTimeout(() => {
         setStart(true);
-      }, 1000);
+      }, 2000);
     }
   };
   const handleProgress = (progress) => {
