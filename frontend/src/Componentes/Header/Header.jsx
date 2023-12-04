@@ -4,7 +4,7 @@ import NavBar from "../NavBar/NavBar";
 import "./Header.css";
 const Header = () => {
   return (
-    <div className="header h-[54vh] lg:h-[83vh] 2xl:h-[83vh] w-full flex items-center justify-center relative">
+    <div className="header sm:h-[250px] md:h-[300px] lg:h-[300px] xl:h-[300px] 2xl:h-[345px] w-full flex items-center justify-center relative">
       <div className="w-full h-full relative">
         <NavBar />
         <div className="w-full h-full overflow-hidden">
@@ -16,9 +16,9 @@ const Header = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex justify-center items-center absolute top-36 md:top-32 translate-x-0">
+          <div className="flex justify-center items-center absolute top-32 md:top-32 translate-x-0">
             <div className="w-full space-y-6 lg:space-y-12 px-3 mx-0 md:mx-20 lg:mx-12 md:px-0">
-              <h1 className="titulo font-noto-500 text-white text-2xl lg:text-5xl xl:text-6xl"  style={{ lineHeight: '1.3' }}>
+              <h1 className="titulo font-noto-500 text-white text-sm md:text-2xl 2xl:text-4xl"  style={{ lineHeight: '1.3' }}>
                 CÓMO AGREGAR A TU EMPRESA SAAS B2B, MÁS DE $2000 DÓLARES EXTRAS TODOS LOS MESES CON NUESTRO MÉTODO ACQUISITION SYSTEM EN AUTOMÁTICO 
               </h1>
             </div>
