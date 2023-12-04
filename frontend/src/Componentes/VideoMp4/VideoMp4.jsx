@@ -1,8 +1,7 @@
 import React, { useState, useRef  } from "react";
 import ReactPlayer from "react-player";
 import "./VideoMp4.css";
-import { FaPlay } from "react-icons/fa";
-import frame from '../../Multimedia/frame.png'
+import frame from '../../Multimedia/potencia.png'
 const VideoMp4 = () => {
   const [playing, setPlaying] = useState(false);
   const [viewed10Progress, setViewed10Progress] = useState(false);
@@ -50,10 +49,10 @@ const VideoMp4 = () => {
         />
         {!playing && (
           <>
-          <img src={frame} alt="frame-video" className={`absolute inset-0 w-full h-full object-cover object-center opacity-transition ${playing ? 'opacity-0' : 'opacity-100'}`}/>
-          <button className="play-button" onClick={togglePlay}>
+          <img src={frame} alt="frame-video" onClick={togglePlay} className={`absolute inset-0 w-full h-full object-cover object-center opacity-transition ${playing ? 'opacity-0' : 'opacity-100'}`}/>
+          {/* <button className="play-button" onClick={togglePlay}>
             <FaPlay />
-          </button>
+          </button> */}
           </>
         )}
       </div>
