@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import ReactPlayer from "react-player";
 import "./VideoMp4.css";
 import { FaPlay } from "react-icons/fa";
+import Gif from "../../Multimedia/videoGif.gif";
 const VideoMp4 = () => {
   const [playing, setPlaying] = useState(false);
   const [playingLoop, setPlayingLoop] = useState(false);
@@ -46,16 +47,19 @@ const VideoMp4 = () => {
     <div className="flex justify-center items-center">
       <div className="relative w-full md:h-[420px] md:w-[740px] overflow-hidden">
         {!playing ? (
-          <div style={{ position: "relative", cursor: "pointer", width: "100%", height: "100%" }}>
-            <ReactPlayer
-              url="https://res.cloudinary.com/doczyujqf/video/upload/v1701724332/Doctor%20Sales/video_sinn_audio_sxpi7j.mp4"
-              playing={playingLoop}
-              loop
-              muted
-              width="100%"
-              height="100%"
+          <div
+            style={{
+              position: "relative",
+              cursor: "pointer",
+              width: "100%",
+              height: "100%",
+            }}
+          >
+            <img
+              src={Gif}
+              alt="GIF"
               onClick={togglePlay}
-              style={{ display: "block" }}
+              style={{ cursor: "pointer", width: "100%", height: "100%" }}
             />
             <button
               onClick={togglePlay}
@@ -66,7 +70,7 @@ const VideoMp4 = () => {
                 outline: "none",
               }}
             >
-              <FaPlay className="h-auto w-[50px] md:w-[70px]"/>
+              <FaPlay className="h-auto w-[50px] md:w-[70px]" />
             </button>
           </div>
         ) : (
