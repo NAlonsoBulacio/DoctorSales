@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 639px) {
   .header {
-    height: 250px; 
+    height: 230px; 
   }
 }
 @media (min-width: 401px) and (max-width: 600px){
