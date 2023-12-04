@@ -4,19 +4,18 @@ import "./VideoMp4.css";
 import frame from '../../Multimedia/potencia.png'
 const VideoMp4 = () => {
   const [playing, setPlaying] = useState(false);
-  const [start, setStart] = useState(false);
+  const [videoClicked, setVideoClicked] = useState(false);
   const [viewed10Progress, setViewed10Progress] = useState(false);
   const [viewed60Progress, setViewed60Progress] = useState(false);
   const [viewedFull, setViewedFull] = useState(false);
   const playerRef = useRef(null);
+
   const togglePlay = () => {
-    if (!playing) {
+    if (!playing && !videoClicked) {
+      setVideoClicked(true); // Indica que se hizo clic en el video
       window.fbq("track", "ViewContent");
       window.fbq("trackCustom", "VideoPlay");
-      setPlaying(!playing);
-      setTimeout(() => {
-        setStart(true);
-      }, 2000);
+      setPlaying(true);
     }
   };
   const handleProgress = (progress) => {
@@ -42,11 +41,10 @@ const VideoMp4 = () => {
           : <ReactPlayer
           ref={playerRef}
           url="https://res.cloudinary.com/doczyujqf/video/upload/v1701287340/Doctor%20Sales/vsl_terminado_1_1_1_1_gipkj8.mp4"
-          playing={start}
+          playing={playing}
           controls
           width="100%"
           height="100%"
-          onPlay={togglePlay}
           onProgress={handleProgress}
         />}
 
