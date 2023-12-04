@@ -52,6 +52,7 @@ const ContactForm = () => {
       message: "",
       phone: "",
     });
+    window.fbq("trackCustom", "FormFilled");
     toast.success("¡Mensaje enviado exitosamente!");
     setSuccess(true);}
   };
