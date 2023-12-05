@@ -63,14 +63,14 @@ const VideoMp4 = () => {
             />
             <button
               onClick={togglePlay}
-              className="play-button flex justify-center items-center rounded-xl text-white bg-purple-800 h-[80px] md:h-[100px] w-[125px] md:w-[145px]"
+              className="play-button flex justify-center items-center rounded-xl text-white bg-purple-800 h-[62px] md:h-[100px] w-[100px] md:w-[145px]"
               style={{
                 border: "none",
                 cursor: "pointer",
                 outline: "none",
               }}
             >
-              <FaPlay className="h-auto w-[50px] md:w-[70px]" />
+              <FaPlay className="h-auto w-[37px] md:w-[70px]" />
             </button>
           </div>
         ) : (
