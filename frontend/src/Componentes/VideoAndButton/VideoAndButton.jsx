@@ -11,7 +11,7 @@ const VideoAndButton = () => {
     <div className="w-full h-auto flex justify-center items-start ">
       <div className="space-y-4">
         <div className="flex justify-center items-start px-4 xl:px-72 my-3">
-          <h1 className="w-full md:w-[740px] font-inter-500 text-gray-700 text-lg md:text-xl lg:text-2xl">
+          <h1 className="w-full md:w-[740px] font-inter-500 text-gray-700 text-sm md:text-xl lg:text-2xl">
              En <span className="text-purple-800">Doctor Sales</span>, hemos
             desarrollado un sistema de{" "}
             <span className="text-purple-800">adquisición de clientes</span>{" "}

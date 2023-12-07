@@ -9,6 +9,7 @@
   object-position: center;
   object-fit: cover;
   transition: transform 0.2s ease-in-out;
+  background-color: rgba(107, 114, 128, 0.692);
 }
 
 .play-button:hover {

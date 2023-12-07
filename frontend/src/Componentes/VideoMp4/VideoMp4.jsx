@@ -63,7 +63,7 @@ const VideoMp4 = () => {
             />
             <button
               onClick={togglePlay}
-              className="play-button flex justify-center items-center rounded-xl text-white bg-purple-800 h-[62px] md:h-[100px] w-[100px] md:w-[145px]"
+              className="play-button flex justify-center items-center rounded-xl text-white h-[62px] md:h-[100px] w-[100px] md:w-[145px]"
               style={{
                 border: "none",
                 cursor: "pointer",
