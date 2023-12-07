@@ -5,7 +5,7 @@ const Policy = () => {
   return (
     <div>
       <div className="w-full h-auto py-8 bg-purple-800 flex justify-center items-center">
-        <img src={logo} alt="el_logo" className="max-w-[90px]" />
+        <a href="/"><img src={logo} alt="el_logo" className="max-w-[90px]" /></a>
       </div>
       <div className="flex justify-center items-start py-14">
         <div className="mx-4 md:mx-32 text-left text-gray-500 space-y-10 font-plus-400">

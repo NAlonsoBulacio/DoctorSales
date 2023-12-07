@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="w-full bg-purple-800 flex justify-center items-center">
       <div className="px-8 py-12 space-y-4">
         <div className="flex justify-center items-center">
-          <img src={logo} alt="logo" className="h-20" />
+          <a href="/"><img src={logo} alt="logo" className="h-20" /></a>
         </div>
         <div className="hidden md:flex flex-wrap justify-center items-center">
           <div className="w-full hidden md:flex justify-center items-center">
