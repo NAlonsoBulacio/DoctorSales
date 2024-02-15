@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../Multimedia/excell.webp";
+import img from "../../assets/excell.webp";
 const QuestionAndExcell = () => {
   return (
     <div className="w-full px-14 ">

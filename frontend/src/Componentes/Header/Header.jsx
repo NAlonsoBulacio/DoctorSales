@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../../Multimedia/banner.gif";
+import banner from "../../assets/banner.gif";
 import NavBar from "../NavBar/NavBar";
 import "./Header.css";
 const Header = () => {

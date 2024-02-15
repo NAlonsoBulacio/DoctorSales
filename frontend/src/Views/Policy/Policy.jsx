@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../../Componentes/Footer/Footer";
-import logo from "../../Multimedia/logo-white.png";
+import logo from "../../assets/logo-white.png";
 const Policy = () => {
   return (
     <div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import diagrama from "../../Multimedia/diagrama.png";
-import diagrama2 from "../../Multimedia/diagrama2.png";
+import diagrama from "../../assets/diagrama.png";
+import diagrama2 from "../../assets/diagrama2.png";
 
 const Diagrama = () => {
   const [showFullScreen, setShowFullScreen] = useState(false);
