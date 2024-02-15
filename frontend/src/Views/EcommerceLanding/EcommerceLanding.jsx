@@ -11,14 +11,14 @@ const EcommerceLanding = () => {
   return (
     <div className="w-full">
       <Home />
-      <div className="bg-gray-100 py-24 space-y-14">
+     <div className="bg-gray-100 py-12 lg:py-24 space-y-14">
         <Calendly />
         <Clients />
       </div>
       <div className="background-about">
         <AboutUs />
-      </div>
-      <div className="bg-gray-100 space-y-24 py-20 ">
+      </div> 
+  <div className="bg-gray-100 space-y-24 py-20 ">
         <ClientReview />
         <OurTools />
         <Footer />

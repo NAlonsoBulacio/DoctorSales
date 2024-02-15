@@ -5,9 +5,9 @@ const MenuPhone = ({ menuOpen, handleMenuToggle }) => {
   return (
     <div className="menu-phone fixed top-0 right-[34px] w-full flex justify-center items-center font-poppins-400">
       <a href="/">Inicio</a>
-      <a href="/places">Propiedades</a>
+      <a href="/places">Nuestro Proceso</a>
       <a href="/about-us">Nosotros</a>
-      <a href="/contact">Contacto</a>
+      <a href="/about-us">Agendar Demo</a>
       <button onClick={handleMenuToggle}>
         <AiOutlineClose
           className=""

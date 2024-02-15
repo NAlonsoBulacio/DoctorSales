@@ -11,16 +11,20 @@ const Header = () => {
   return (
     <div>
       <div
-        className="mx-auto flex items-center px-10 py-2 justify-between lg:hidden"
-        style={{ maxWidth: "1150px", height: "90px" }}
+        className="mx-auto flex items-center px-10 py-2 pt-2 justify-between lg:hidden"
+        style={{ maxWidth: "1150px", height: "110px" }}
       >
         <div className="flex items-center">
           <a href="/">
-            <img className="w-[70px]" src={logo} alt="Logo" />
+            <img
+            className="w-[80px]"
+              src={logo}
+              alt="Logo"
+            />
           </a>
         </div>
         <button className="hamburguer" onClick={handleMenuToggle}>
-          <img src={menu} alt="MI-MENU" width={58} />
+          <img src={menu} alt="MI-MENU" width={64} />
         </button>
       </div>
       <div className="hidden lg:flex w-full h-32 items-center justify-center px-20 bg-transparent">
