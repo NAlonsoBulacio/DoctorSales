@@ -15,7 +15,8 @@ const EcommerceLanding = () => {
         <Calendly />
         <Clients />
       </div>
-      <div className="background-about">
+      <div className="background-about"
+      >
         <AboutUs />
       </div>
       <div className="bg-gray-100 space-y-14 lg:space-y-24 py-10 lg:py-20 ">
