@@ -16,11 +16,7 @@ const Header = () => {
       >
         <div className="flex items-center">
           <a href="/">
-            <img
-            className="w-[80px]"
-              src={logo}
-              alt="Logo"
-            />
+            <img className="w-[80px]" src={logo} alt="Logo" />
           </a>
         </div>
         <button className="hamburguer" onClick={handleMenuToggle}>
@@ -42,21 +38,26 @@ const Header = () => {
           <div>
             <ul className="flex justify-center items-center space-x-10">
               <li>
-                <a href="" className="text-xl font-poppins-400 text-gray-200">
+                <a href="/" className="text-xl font-poppins-400 text-gray-200">
                   Nuestro Proceso
                 </a>
               </li>
               <li>
-                <a href="" className="text-xl font-poppins-400 text-gray-200">
+                <a
+                  href="#about"
+                  className="text-xl font-poppins-400 text-gray-200"
+                >
                   Sobre Nosotros
                 </a>
               </li>
             </ul>
           </div>
           <div>
-            <button className="text-xl font-poppins-400 text-white border-2 border-white rounded-lg p-2 hover:bg-white hover:text-purple-900 transition duration-400">
-              Agendar demo
-            </button>
+            <a href="#calendly">
+              <button className="text-xl font-poppins-400 text-white border-2 border-white rounded-lg p-2 hover:bg-white hover:text-purple-900 transition duration-400">
+                Agendar demo
+              </button>
+            </a>
           </div>
         </div>
       </div>

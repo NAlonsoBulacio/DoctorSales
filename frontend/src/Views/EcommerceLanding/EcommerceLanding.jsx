@@ -6,6 +6,7 @@ import AboutUs from "../../ComponentesEcommerce/AboutUs/AboutUs";
 import ClientReview from "../../ComponentesEcommerce/ClientReview/ClientReview";
 import OurTools from "../../ComponentesEcommerce/OurTools/OurTools";
 import Footer from "../../ComponentesEcommerce/E-Footer/E-Footer";
+import animatedImage from '../../assets/animated-shape.png';
 import "./EcommerceLanding.css";
 const EcommerceLanding = () => {
   return (
@@ -15,8 +16,8 @@ const EcommerceLanding = () => {
         <Calendly />
         <Clients />
       </div>
-      <div className="background-about"
-      >
+      <div id="about" className=""
+       style={{ backgroundImage: `url(${animatedImage})` }}>
         <AboutUs />
       </div>
       <div className="bg-gray-100 space-y-14 lg:space-y-24 py-10 lg:py-20 ">
