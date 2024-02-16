@@ -5,6 +5,11 @@
     z-index: 3;
     flex-direction: column;
   }
+
+  .menu-container{
+    z-index: 3;
+    flex-direction: column;
+  }
   
   .menu-phone a {
     /* Estilos para los elementos <a> dentro del menú */
