@@ -12,8 +12,8 @@ const Calendly = () => {
   return (
     <div id="calendly" className="w-full flex flex-wrap justify-center relative">
       <div className="w-full">
-        <h1 className="font-noto-400 text-2xl lg:text-4xl text-gray-700">
-          Agendá <span className="font-noto-500 text-purple-800">Tu Rreunión</span> Con Nosotros
+        <h1 className="font-plus-400 text-2xl lg:text-5xl text-gray-700">
+          Agendá <span className="font-plus-500 text-purple-800">Tu Rreunión</span> Con Nosotros
         </h1>
       </div>
       <div className="w-full flex justify-center ">
