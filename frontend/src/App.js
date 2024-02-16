@@ -4,6 +4,7 @@ import LandingPage from "./Views/LandingPage/LandingPage";
 import ThanksPage from "./Views/ThanksPage/ThanksPage";
 import Calendly from "./Views/Calendly/Calendly";
 import Policy from "./Views/Policy/Policy";
+import EcommerceLanding from "./Views/EcommerceLanding/EcommerceLanding";
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
       <Route exact path="/doctor-thanks" component={ThanksPage} />
       <Route exact path="/calendly" component={Calendly} />
       <Route exact path="/policy" component={Policy} />
+      <Route exact path="/e-commerce" component={EcommerceLanding} />
     </div>
   );
 }

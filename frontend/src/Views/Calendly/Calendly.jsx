@@ -8,13 +8,12 @@ const Calendly = () => {
     onEventTypeViewed: () => console.log("onEventTypeViewed"),
     onEventScheduled: (e) => {
       console.log(e.data.payload);
-      // Aquí puedes redirigir al usuario después de que la reunión se haya agendado
       window.location.href = 'https://www.doctorsales.xyz/doctor-thanks';
     },
   });
 
   return (
-    <div className="App">
+    <div className="">
       <InlineWidget url="https://calendly.com/doctorsales/30min" />
     </div>
   );

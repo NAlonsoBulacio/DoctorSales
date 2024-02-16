@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import ReactPlayer from "react-player";
 import "./VideoMp4.css";
 import { FaPlay } from "react-icons/fa";
-import Gif from "../../Multimedia/videoGif.gif";
+import Gif from "../../assets/videoGif.gif";
 const VideoMp4 = () => {
   const [playing, setPlaying] = useState(false);
   const [playingLoop, setPlayingLoop] = useState(false);

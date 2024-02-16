@@ -1,0 +1,31 @@
+.menu-phone {
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo negro semi-transparente */
+    transition: height 0.3s;
+    height: 100vh;
+    z-index: 3;
+    flex-direction: column;
+  }
+  
+  .menu-phone a {
+    /* Estilos para los elementos <a> dentro del menú */
+    text-align: center;
+    color: white; /* Color de texto */
+    font-size: 1.8rem; /* Tamaño del texto */
+    margin: 10px 0; /* Espaciado vertical entre elementos <a> */
+  }
+  .menu-phone a:hover {
+    color: #1daaba ;
+  }
+  
+  .menu-phone button {
+    /* Estilos para el botón "Cerrar" */
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 20px; /* Espaciado superior para el botón */
+  }
+  .menu-phone button:hover {
+    color: #1daaba ;
+  }

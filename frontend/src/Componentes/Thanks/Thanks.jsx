@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../Multimedia/logo.png";
+import logo from "../../assets/logo.png";
 const Thanks = () => {
   return (
     <div className="my-8 flex flex-wrap justify-center items-center">
