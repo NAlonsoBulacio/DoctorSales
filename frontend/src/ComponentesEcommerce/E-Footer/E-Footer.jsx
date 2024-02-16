@@ -5,15 +5,31 @@ import { SiGmail } from "react-icons/si";
 import { FaWhatsapp } from "react-icons/fa";
 import logo from "../../assets/logo-violette.png";
 const Footer = () => {
+
+  const scrollToProcess = () => {
+    const processElement = document.getElementById("process");
+    if (processElement) {
+      const offset = 240; 
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = processElement.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+  
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth" 
+      });
+    }
+  };
   return (
     <div>
       <div className="px-4 lg:px-32 pt-8 lg:pt-20">
         <div className="w-full flex justify-center items-end space-x-4 lg:space-x-14">
-          <a href="" className="font-poppins-500 text-xl lg:text-2xl text-gray-700">
+          <a href="#about" className="cursor-pointer font-poppins-500 text-xl lg:text-2xl text-gray-700 hover:text-purple-700">
             Sobre <br /> Nosotros
           </a>
           <img className="w-20 lg:w-28" src={logo} alt="logo-violeta" />
-          <a href="" className="font-poppins-500 text-xl lg:text-2xl text-gray-700">
+          <a onClick={scrollToProcess} className="cursor-pointer font-poppins-500 text-xl lg:text-2xl text-gray-700 hover:text-purple-700">
             Nuestros <br /> Procesos
           </a>
         </div>
