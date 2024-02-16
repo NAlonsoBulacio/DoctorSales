@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../../assets/logo-white.png";
 import MenuPhone from "../MenuPhone/MenuPhone";
 import menu from "../../assets/menu.svg";
+import './E-Header.css'
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -38,14 +39,14 @@ const Header = () => {
           <div>
             <ul className="flex justify-center items-center space-x-10">
               <li>
-                <a href="/e-commerce" className="text-xl font-poppins-400 text-gray-200">
+                <a href="/e-commerce" className="text-xl font-poppins-400 text-gray-200 underline-on-hover">
                   Nuestro Proceso
                 </a>
               </li>
               <li>
                 <a
                   href="#about"
-                  className="text-xl font-poppins-400 text-gray-200"
+                  className="text-xl font-poppins-400 text-gray-200 underline-on-hover"
                 >
                   Sobre Nosotros
                 </a>
@@ -54,8 +55,8 @@ const Header = () => {
           </div>
           <div>
             <a href="#calendly">
-              <button className="text-xl font-poppins-400 text-white border-2 border-white rounded-lg p-2 hover:bg-white hover:text-purple-900 transition duration-400">
-                Agendar demo
+              <button className="text-xl font-poppins-400 text-white border-2 border-white rounded-3xl py-2 px-4 hover:bg-white hover:text-purple-900 transition duration-400">
+                Agendar Demo
               </button>
             </a>
           </div>

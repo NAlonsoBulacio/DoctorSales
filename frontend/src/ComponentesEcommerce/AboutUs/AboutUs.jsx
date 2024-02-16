@@ -34,7 +34,7 @@ const AboutUs = () => {
               </h1>
             </div>
             <div className="w-full flex justify-center lg:justify-start">
-              <button className="w-auto text-2xl font-poppins-400 text-white border-2 border-white rounded-lg p-2 hover:bg-white hover:text-purple-900 transition duration-400">
+              <button className="w-auto text-2xl font-poppins-400 text-white border-2 border-white rounded-3xl py-2 px-4 hover:bg-white hover:text-purple-900 transition duration-400">
                 Agendar Demo
               </button>
             </div>
