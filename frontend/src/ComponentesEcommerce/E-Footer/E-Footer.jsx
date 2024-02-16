@@ -7,13 +7,13 @@ import logo from "../../assets/logo-violette.png";
 const Footer = () => {
   return (
     <div>
-      <div className="px-32 pt-20">
-        <div className="w-full flex justify-center items-end space-x-14">
-          <a href="" className="font-poppins-500 text-2xl text-gray-700">
+      <div className="px-4 lg:px-32 pt-8 lg:pt-20">
+        <div className="w-full flex justify-center items-end space-x-4 lg:space-x-14">
+          <a href="" className="font-poppins-500 text-xl lg:text-2xl text-gray-700">
             Sobre <br /> Nosotros
           </a>
-          <img className="w-28" src={logo} alt="logo-violeta" />
-          <a href="" className="font-poppins-500 text-2xl text-gray-700">
+          <img className="w-20 lg:w-28" src={logo} alt="logo-violeta" />
+          <a href="" className="font-poppins-500 text-xl lg:text-2xl text-gray-700">
             Nuestros <br /> Procesos
           </a>
         </div>
@@ -37,17 +37,17 @@ const Footer = () => {
           </button>
         </div>
         <div className="flex justify-center items-center">
-          <div className="w-1/3 flex justify-start">
+          <div className="w-1/5 lg:w-1/3 flex justify-start">
             <img
               src="https://strapi.io/assets/white-hero/bottom-left.svg"
               alt="dots"
             />
           </div>
-          <div className="w-1/3 flex justify-center mt-6 space-x-4 text-lg">
-            <h1>© Copyright 2023</h1>
-            <a href="" className="text-gray-700 hover:text-black">Policy Terms</a>
+          <div className="w-3/5 lg:w-1/3 flex flex-wrap justify-center mt-6 space-x-0 lg:space-x-4 text-lg">
+            <h1 className="w-full lg:w-auto">© Copyright 2023</h1>
+            <a href="" className="w-full lg:w-auto text-gray-700 hover:text-black">Policy Terms</a>
           </div>
-          <div className="w-1/3 flex justify-end">
+          <div className="w-1/5 lg:w-1/3 flex justify-end">
             <img
               className="scale-x-[-1]"
               src="https://strapi.io/assets/white-hero/bottom-left.svg"

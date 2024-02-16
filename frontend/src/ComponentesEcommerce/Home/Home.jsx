@@ -24,8 +24,11 @@ const Home = () => {
           </h1>
         </div>
         <div>
-          <h2 className="text-xl font-noto-200 text-gray-200">
-            Sin tener que depender de <br/>Facebook Adds, agencias o influencers
+          <h2 className="hidden lg:flex text-xl lg:text-2xl font-noto-200 text-gray-200">
+            Sin tener que depender de Facebook Adds, agencias o influencers.
+          </h2>
+          <h2 className="lg:hidden text-xl font-noto-200 text-gray-200">
+            Sin tener que depender de <br/>Facebook Adds, agencias o influencers.
           </h2>
         </div>
       </div>

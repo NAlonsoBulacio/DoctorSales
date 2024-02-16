@@ -1,5 +1,5 @@
 import React from "react";
-
+import './ClientReview.css'
 const ClientReview = () => {
   const reviews = [
     {
@@ -24,11 +24,11 @@ const ClientReview = () => {
 
   return (
     <div className="w-full flex flex-wrap justify-center items-center px-4 lg:px-20 ">
-      <div className="flex justify-center items-center gap-x-0 lg:gap-x-20 ">
+      <div className="flex flex-wrap justify-center items-center gap-y-8 lg:gap-y-0 gap-x-0 lg:gap-x-20 ">
         {reviews?.map((review, index) => (
           <div
             key={index}
-            className="w-full lg:w-1/3 flex flex-wrap justify-center items-center p-4 bg-gray-200 shadow-lg rounded-xl"
+            className="w-full lg:w-1/3 flex flex-wrap justify-center items-center p-4 background-card-review shadow-lg rounded-xl"
           >
             <div className="w-full flex justify-center items-center ">
               <h1 className="font-noto-italic-400 text-xl text-gray-700 text-left">
