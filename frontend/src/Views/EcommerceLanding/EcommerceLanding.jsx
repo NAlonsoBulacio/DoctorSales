@@ -7,6 +7,7 @@ import ClientReview from "../../ComponentesEcommerce/ClientReview/ClientReview";
 import OurTools from "../../ComponentesEcommerce/OurTools/OurTools";
 import Footer from "../../ComponentesEcommerce/E-Footer/E-Footer";
 import animatedImage from '../../assets/animated-shape.png';
+import Flyer from "../../ComponentesEcommerce/Flyer/Flyer";
 import "./EcommerceLanding.css";
 const EcommerceLanding = () => {
   return (

@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -107,4 +108,33 @@
   .font-poppins-900 {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
+  }
+  .font-plus-300 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 300;
+  }
+  .font-plus-400 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+  }
+  .font-plus-italic-400 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-style:italic;
+  }
+  .font-plus-500 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+  }
+  .font-plus-600 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+  }
+  .font-plus-700 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+  }
+  .font-plus-800 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
   }
