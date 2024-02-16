@@ -23,6 +23,11 @@ const EcommerceLanding = () => {
       </div>
       <div className="bg-gray-100 space-y-14 lg:space-y-24 py-10 lg:py-20 ">
         <ClientReview />
+        <div className="w-full flex justify-center ">
+          <div className="w-full">
+            <hr className="my-6 border-[1.5px] border-gray-400" />
+          </div>
+        </div>
         <OurTools />
         <Footer />
       </div>
