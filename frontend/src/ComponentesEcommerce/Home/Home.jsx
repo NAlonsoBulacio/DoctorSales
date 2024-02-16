@@ -29,13 +29,13 @@ const Home = () => {
             <h2 className="hidden lg:flex text-xl lg:text-2xl font-plus-300 text-gray-200">
             Sin tener que depender de Facebook Adds, agencias o influencers.
             </h2>
-            <h2 className="lg:hidden text-xl font-plus-200 text-gray-200">
+            <h2  className="lg:hidden text-xl font-plus-200 text-gray-200">
               Sin tener que depender de <br />
               Facebook Adds, agencias o influencers.
             </h2>
           </div>
         </div>
-        <div className="flex justify-center pb-0 lg:pb-16">
+        <div id="process" className="flex justify-center pb-0 lg:pb-16">
           <VideoMp4 />
         </div>
       </div>
