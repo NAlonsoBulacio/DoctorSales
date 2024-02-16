@@ -21,8 +21,7 @@ const Home = () => {
               className="lg:hidden text-3xl lg:text-5xl font-plus-500 text-gray-200"
               style={{ lineHeight: "1.3" }}
             >
-              LA FÓRMULA GARANTIZADA DE 3 PASOS PARA ESCALAR UNA MARCA DE
-              COSMÉTICA A 7/8 CIFRAS EN 2024.
+              Nuevo video de x minutos revela cual es el sistema probado de x pasos para escalar una marca ecommerce a 7 cifras
             </h1>
           </div>
           <div>
