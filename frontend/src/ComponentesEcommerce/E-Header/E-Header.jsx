@@ -38,7 +38,7 @@ const Header = () => {
           <div>
             <ul className="flex justify-center items-center space-x-10">
               <li>
-                <a href="/" className="text-xl font-poppins-400 text-gray-200">
+                <a href="/e-commerce" className="text-xl font-poppins-400 text-gray-200">
                   Nuestro Proceso
                 </a>
               </li>
