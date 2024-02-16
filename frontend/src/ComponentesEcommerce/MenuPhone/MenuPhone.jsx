@@ -6,7 +6,7 @@ const MenuPhone = ({ menuOpen, handleMenuToggle }) => {
     <div className="menu-phone fixed top-0 right-0 w-full flex justify-center items-center font-poppins-400">
       <div className="menu-container w-full flex justify-center items-center pr-[34px]">
       <a href="/e-commerce">Inicio</a> 
-      <a href="/places">Nuestro Proceso</a>
+      <a href="/e-commerce">Nuestro Proceso</a>
       <a href="/#about">Nosotros</a>
       <a href="/#calendly">Agendar Demo</a>
       <button onClick={handleMenuToggle}>
