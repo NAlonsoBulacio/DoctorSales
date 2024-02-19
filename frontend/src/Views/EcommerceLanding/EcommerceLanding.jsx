@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Home from "../../ComponentesEcommerce/Home/Home";
 import Calendly from "../../ComponentesEcommerce/Calendly/Calendly";
 import Clients from "../../ComponentesEcommerce/Clients/Clients";
@@ -7,11 +7,29 @@ import ClientReview from "../../ComponentesEcommerce/ClientReview/ClientReview";
 import OurTools from "../../ComponentesEcommerce/OurTools/OurTools";
 import Footer from "../../ComponentesEcommerce/E-Footer/E-Footer";
 import animatedImage from '../../assets/animated-shape.png';
-import Flyer from "../../ComponentesEcommerce/Flyer/Flyer";
+import GoHomeButton from "../../ComponentesEcommerce/GoHome/GoHome";
 import "./EcommerceLanding.css";
 const EcommerceLanding = () => {
+
+ const [showGoHomeButton, setShowGoHomeButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const triggerPosition = window.innerHeight * 0.65;
+
+      setShowGoHomeButton(scrollPosition > triggerPosition);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="w-full">
+    <div id="home" className="w-full">
       <Home />
       <div className="bg-gray-100 py-12 lg:py-24 space-y-14">
         <Calendly />
@@ -31,6 +49,7 @@ const EcommerceLanding = () => {
         <OurTools />
         <Footer />
       </div>
+       {showGoHomeButton && <GoHomeButton />}
     </div>
   );
 };
