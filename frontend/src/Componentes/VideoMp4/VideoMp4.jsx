@@ -45,7 +45,7 @@ const VideoMp4 = () => {
   };
   return (
     <div className="flex justify-center items-center">
-      <div className="relative pb-6 lg:pb-0 w-5/6 lg:w-full md:h-[420px] md:w-[740px] overflow-hidden">
+      <div className="relative pb-6 lg:pb-0 w-5/6 lg:w-auto md:h-[420px] md:w-[740px] overflow-hidden">
         {!playing ? (
           <div
             style={{
