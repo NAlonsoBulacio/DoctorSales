@@ -1,6 +1,11 @@
 import React from "react";
-import './ClientReview.css'
+import './ClientReview.css';
+import { useInView } from "react-intersection-observer";
 const ClientReview = () => {
+  const [ref1, inView1] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
   const reviews = [
     {
       reviewText: `"Nos hemos apoyado de las soluciones de Doctor Sales porque estas nos van
@@ -24,7 +29,11 @@ const ClientReview = () => {
 
   return (
     <div className="w-full flex flex-wrap justify-center items-center px-4 lg:px-20 ">
-      <div className="flex flex-wrap justify-center items-center gap-y-8 lg:gap-y-0 gap-x-0 lg:gap-x-20 ">
+      <div ref={ref1} className={`${
+          inView1
+            ? "opacity-100 transition-opacity duration-[1s]"
+            : "opacity-0"
+        } flex flex-wrap justify-center items-center gap-y-8 lg:gap-y-0 gap-x-0 lg:gap-x-20 `}>
         {reviews?.map((review, index) => (
           <div
             key={index}
