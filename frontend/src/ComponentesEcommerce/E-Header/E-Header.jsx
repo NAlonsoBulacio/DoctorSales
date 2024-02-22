@@ -30,7 +30,7 @@ const Header = () => {
             <img className="w-20 z-50" src={logo} alt="logo-white" />
           </div>
           <div className="flex">
-            <h1 className="font-poppins-500 text-3xl text-white">
+            <h1 className="font-poppins-500 text-3xl text-white select-none">
               Doctor Sales
             </h1>
           </div>

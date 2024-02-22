@@ -23,7 +23,7 @@ const Footer = () => {
   };
   return (
     <div>
-      <div className="px-4 lg:px-32 pt-8 lg:pt-20">
+      <div className="px-4 lg:px-32 pt-8 lg:pt-20 pb-0 lg:pb-16">
         <div className="w-full flex justify-center items-end space-x-4 lg:space-x-14">
           <a href="#about" className="cursor-pointer font-poppins-500 text-xl lg:text-2xl text-gray-700 hover:text-purple-700">
             Sobre <br /> Nosotros
@@ -38,7 +38,7 @@ const Footer = () => {
             <hr className="my-6 border-[1.5px] border-purple-900" />
           </div>
         </div>
-        <div className="flex justify-center items-center space-x-6">
+        {/* <div className="flex justify-center items-center space-x-6">
           <button className="flex justify-center bg-purple-600 items-center rounded-full h-10 w-10 transition-transform transform hover:scale-105">
             <FaInstagram className="text-white text-2xl" />
           </button>
@@ -51,7 +51,7 @@ const Footer = () => {
           <button className="flex justify-center bg-purple-600 items-center rounded-full h-10 w-10 transition-transform transform hover:scale-105">
             <FaWhatsapp className="text-white text-2xl" />
           </button>
-        </div>
+        </div> */}
         <div className="flex justify-center items-center">
           <div className="w-1/5 lg:w-1/3 flex justify-start">
             <img

@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../E-Header/E-Header";
-import VideoMp4 from "../../Componentes/VideoMp4/VideoMp4";
+import VideoMp4 from "../VideoMp4/VideoMp4";
 import "./Home.css";
 import { useInView } from "react-intersection-observer";
 const Home = () => {

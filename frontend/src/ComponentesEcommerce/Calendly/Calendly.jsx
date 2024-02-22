@@ -12,6 +12,10 @@ const Calendly = () => {
     triggerOnce: true,
     threshold: 0.5,
   });
+  const [ref3, inView3] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
   const [ref2, inView2] = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -20,12 +24,21 @@ const Calendly = () => {
     <div id="calendly" className="w-full flex flex-wrap justify-center relative">
       <div className="w-full">
         <h1 
+         ref={ref3} 
+        className={`${
+          inView3
+            ? "opacity-100 transition-opacity duration-[1s]"
+            : "opacity-0"
+        } block lg:hidden font-plus-400 text-2xl lg:text-5xl text-gray-700 px-2`}>
+          Agendá <span className="font-plus-500 text-purple-800">Tu Rreunión</span> <br/>Con Nosotros
+        </h1>
+        <h1 
          ref={ref1} 
         className={`${
           inView1
             ? "opacity-100 transition-opacity duration-[1s]"
             : "opacity-0"
-        } font-plus-400 text-2xl lg:text-5xl text-gray-700`}>
+        } hidden lg:block font-plus-400 text-2xl lg:text-5xl text-gray-700 `}>
           Agendá <span className="font-plus-500 text-purple-800">Tu Rreunión</span> Con Nosotros
         </h1>
       </div>
