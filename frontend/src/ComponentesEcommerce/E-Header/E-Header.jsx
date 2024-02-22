@@ -27,7 +27,7 @@ const Header = () => {
       <div className="hidden lg:flex w-full h-32 items-center justify-center px-20 bg-transparent">
         <div className="w-1/2 flex justify-start items-center space-x-6">
           <div className="flex">
-            <img className="w-20" src={logo} alt="logo-white" />
+            <img className="w-20 z-50" src={logo} alt="logo-white" />
           </div>
           <div className="flex">
             <h1 className="font-poppins-500 text-3xl text-white">
@@ -39,7 +39,7 @@ const Header = () => {
           <div>
             <ul className="flex justify-center items-center space-x-10">
               <li>
-                <a href="/e-commerce" className="text-xl font-poppins-400 text-gray-200 underline-on-hover">
+                <a href="/" className="text-xl font-poppins-400 text-gray-200 underline-on-hover">
                   Nuestro Proceso
                 </a>
               </li>

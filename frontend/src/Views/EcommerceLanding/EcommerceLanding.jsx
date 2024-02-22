@@ -8,6 +8,7 @@ import OurTools from "../../ComponentesEcommerce/OurTools/OurTools";
 import Footer from "../../ComponentesEcommerce/E-Footer/E-Footer";
 import animatedImage from '../../assets/animated-shape.png';
 import GoHomeButton from "../../ComponentesEcommerce/GoHome/GoHome";
+import CalendlyFooter from "../../ComponentesEcommerce/CalendlyFooter/CalendlyFooter";
 import "./EcommerceLanding.css";
 const EcommerceLanding = () => {
 
@@ -48,6 +49,7 @@ const EcommerceLanding = () => {
         </div>
         <OurTools />
         <Footer />
+        <CalendlyFooter />
       </div>
        {showGoHomeButton && <GoHomeButton />}
     </div>
