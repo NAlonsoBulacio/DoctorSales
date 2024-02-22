@@ -211,7 +211,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      <ToastContainer />
+
     </form>
   );
 };
