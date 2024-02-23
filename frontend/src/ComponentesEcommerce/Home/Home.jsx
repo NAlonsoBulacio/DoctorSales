@@ -25,20 +25,30 @@ const Home = () => {
                 inView1
                   ? "opacity-100 transition-opacity duration-[1s]"
                   : "opacity-0"
-              } hidden lg:flex text-3xl lg:text-6xl font-plus-600 text-gray-200`}
+              } hidden xl:flex text-3xl lg:text-7xl font-plus-700 text-gray-200`}
               style={{ lineHeight: "1.3" }}
             >
-              New x-minute video reveals the proven x-step system to scale an e-commerce brand to 7 figures
+              New 2-minute video reveals the<br/> proven 3-step system to scale an<br/> e-commerce brand to 7 figures
             </h1>
             <h1
               className={`${
                 inView1
                   ? "opacity-100 transition-opacity duration-[1s]"
                   : "opacity-0"
-              } lg:hidden text-3xl lg:text-6xl font-plus-600 text-gray-200`}
+              } hidden lg:flex xl:hidden text-3xl lg:text-6xl font-plus-700 text-gray-200`}
               style={{ lineHeight: "1.3" }}
             >
-             New x-minute video reveals the proven x-step system to scale an<br/> e-commerce brand<br/> to 7 figures
+              New 2-minute video reveals the proven 3-step system to scale an e-commerce brand to 7 figures
+            </h1>
+            <h1
+              className={`${
+                inView1
+                  ? "opacity-100 transition-opacity duration-[1s]"
+                  : "opacity-0"
+              } lg:hidden lg:text-6xl font-plus-600 text-gray-200`}
+              style={{ lineHeight: "1.3", fontSize:"27px" }}
+            >
+             New 2-minute video reveals the proven 3-step system to <span className=""></span>scale an e-commerce<br/> brand to 7 figures
             </h1>
           </div>
           <div ref={ref2}>

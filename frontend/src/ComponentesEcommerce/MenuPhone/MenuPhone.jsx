@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import logo from "../../assets/logo-violette.png";
 const MenuPhone = ({ menuOpen, handleMenuToggle }) => {
   return (
-    <div className={`menu-phone ${menuOpen ? "slide-in" : ""} flex flex-wrap justify-start items-start bg-gray-300 border-2 border-gray-500 fixed top-0 right-0 w-screen h-screen font-poppins-400 pb-8`}>
+    <div className={`menu-phone ${menuOpen ? "slide-in" : ""} flex flex-wrap justify-start items-start bg-gray-200 border-2 border-gray-400 fixed top-0 right-0 w-screen h-screen font-poppins-400 pb-8`}>
       <div className="mx-auto flex items-center px-10 py-2 pt-2 justify-center lg:hidden">
         <div className="flex items-center">
           <a href="/">

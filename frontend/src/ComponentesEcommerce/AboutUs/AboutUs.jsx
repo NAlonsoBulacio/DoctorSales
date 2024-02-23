@@ -19,7 +19,7 @@ const AboutUs = () => {
     threshold: 0.5,
   });
   return (
-    <div className="py-20">
+    <div className="py-14 lg:py-20">
       <div className="flex flex-wrap justify-center items-center px-4 lg:px-10">
         <div className="w-full" ref={ref1}>
           <h1
@@ -37,8 +37,8 @@ const AboutUs = () => {
             <hr className="my-8 border-[1.5px] border-purple-400" />
           </div>
         </div>
-        <div className="w-full flex flex-wrap justify-center items-center gap-y-4">
-          <div className="w-full lg:w-1/2"
+        <div className="w-full flex flex-wrap justify-center items-start gap-y-4">
+          <div className="w-full lg:w-1/2 rounded-lg overflow-hidden"
           ref={ref3}
           >
             <img
@@ -52,7 +52,7 @@ const AboutUs = () => {
             />
           </div>
           <div
-            className="w-full lg:w-1/2 flex flex-wrap text-left text-gray-200 poppins-400 text-xl space-y-4 px-4 lg:px-12"
+            className="w-full lg:w-1/2 flex flex-wrap text-left text-gray-200 poppins-400 text-xl space-y-4 px-2 lg:px-12"
             ref={ref2}
           >
             <div>
@@ -132,7 +132,7 @@ const AboutUs = () => {
                This uniqueness allows us to stand out and achieve seven-figure monthly results with our clients.
               </h1>
             </div>
-            <div className="w-full flex justify-center lg:justify-start"
+            <div className="w-full flex justify-center lg:justify-start py-2"
             ref={ref4}
             >
               <a href="#calendly">
