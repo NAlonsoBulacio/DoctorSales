@@ -94,7 +94,7 @@ const VideoMp4 = () => {
             controls
             width="100%"
             height="100%"
-            preload="auto"
+
           />
         )}
       </div>
