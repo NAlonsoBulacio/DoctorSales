@@ -38,7 +38,7 @@ const Home = () => {
               } hidden lg:flex xl:hidden text-3xl lg:text-6xl font-plus-700 text-gray-200`}
               style={{ lineHeight: "1.3" }}
             >
-              New 2-minute video reveals the proven 3-step system to scale an skincare e-commerce brand to 7 figures
+              New 2-minute video reveals the proven 3-step system <br/> to scale an skincare<br/> e-commerce brand to 7 figures
             </h1>
             <h1
               className={`${
@@ -48,7 +48,8 @@ const Home = () => {
               } lg:hidden lg:text-6xl font-plus-600 text-gray-200`}
               style={{ lineHeight: "1.3", fontSize:"27px" }}
             >
-             New 2-minute video reveals the proven to scale an skincare e-commerce<br/> brand to 7 figures
+             New 2-minute video reveals the proven 3-step system<br/>  to scale an Skincare<br/> E-Commerce brand<br/>  to 7 figures
+             {/* New 2-minute video reveals the proven 3-step<br/> system to scale an<br/> skincare e-commerce<br/> brand to 7 figures */}
             </h1>
           </div>
           <div ref={ref2}>

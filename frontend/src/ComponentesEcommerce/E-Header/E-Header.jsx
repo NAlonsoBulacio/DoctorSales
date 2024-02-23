@@ -63,7 +63,7 @@ const Header = () => {
           <div>
             <a href="#calendly">
               <button className="text-xl font-poppins-400 text-white border-2 border-white rounded-3xl py-2 px-4 hover:bg-white hover:text-purple-900 transition duration-400">
-                Schedule a Meeting
+              Discovery a Call
               </button>
             </a>
           </div>
