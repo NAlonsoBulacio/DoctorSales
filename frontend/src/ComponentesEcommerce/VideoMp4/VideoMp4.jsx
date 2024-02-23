@@ -29,21 +29,21 @@ const VideoMp4 = () => {
       setPlaying(true);
     }
   };
-  const handleProgress = (progress) => {
-    const { playedSeconds } = progress;
-    if (playedSeconds >= 10 && !viewed10Progress) {
-      window.fbq("trackCustom", "VideoViewed10Progress");
-      setViewed10Progress(true);
-    }
-    if (playedSeconds >= 60 && !viewed60Progress) {
-      window.fbq("trackCustom", "VideoViewed60Progress");
-      setViewed60Progress(true);
-    }
-    if (playedSeconds >= 180 && !viewedFull) {
-      window.fbq("trackCustom", "VideoViewedFull");
-      setViewedFull(true);
-    }
-  };
+  // const handleProgress = (progress) => {
+  //   const { playedSeconds } = progress;
+  //   if (playedSeconds >= 10 && !viewed10Progress) {
+  //     window.fbq("trackCustom", "VideoViewed10Progress");
+  //     setViewed10Progress(true);
+  //   }
+  //   if (playedSeconds >= 60 && !viewed60Progress) {
+  //     window.fbq("trackCustom", "VideoViewed60Progress");
+  //     setViewed60Progress(true);
+  //   }
+  //   if (playedSeconds >= 180 && !viewedFull) {
+  //     window.fbq("trackCustom", "VideoViewedFull");
+  //     setViewedFull(true);
+  //   }
+  // };
   return (
     <div className="flex justify-center items-center">
       <div className="relative pb-6 lg:pb-0 w-5/6 lg:w-auto md:h-[420px] md:w-[740px] overflow-hidden">
@@ -83,6 +83,7 @@ const VideoMp4 = () => {
             width="100%"
             height="100%"
             onProgress={handleProgress}
+            preload="auto"
           />
         )}
       </div>
