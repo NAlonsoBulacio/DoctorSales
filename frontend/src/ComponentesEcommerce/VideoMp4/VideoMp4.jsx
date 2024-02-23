@@ -30,7 +30,7 @@ const VideoMp4 = () => {
 
   return (
     <div className="flex justify-center items-center">
-      <div className="flex justify-center relative pb-6 lg:pb-0 w-5/6 lg:w-auto md:h-[420px] md:w-[740px] overflow-hidden">
+      <div className="flex justify-center relative pb-6 lg:pb-0 w-[370px] lg:w-auto md:h-[420px] md:w-[740px] overflow-hidden">
         <div className="max-w-[410px] w-full h-[380px] md:h-[420px] ">
           {!playing ? (
             <div className="flex justify-center items-center absolute cursor-pointer w-full h-[380px] md:h-[420px] z-50 overflow-hidden">
