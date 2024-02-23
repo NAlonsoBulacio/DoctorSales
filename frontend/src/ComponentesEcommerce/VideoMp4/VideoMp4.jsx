@@ -8,10 +8,7 @@ const VideoMp4 = () => {
   const [playing, setPlaying] = useState(false);
   const [playingLoop, setPlayingLoop] = useState(false);
   const [videoClicked, setVideoClicked] = useState(false);
-  const [viewed10Progress, setViewed10Progress] = useState(false);
-  const [viewed60Progress, setViewed60Progress] = useState(false);
-  const [viewedFull, setViewedFull] = useState(false);
-
+  const playerRef = useRef(null);
   useEffect(() => {
     if (!playingLoop) {
       setTimeout(() => {
@@ -22,45 +19,17 @@ const VideoMp4 = () => {
 
   const togglePlay = () => {
     if (!playing && !videoClicked) {
-      setVideoClicked(true); // Indica que se hizo clic en el video
-      window.fbq("track", "ViewContent");
-      window.fbq("trackCustom", "VideoPlay");
+      setVideoClicked(true); 
       setPlaying(true);
     }
   };
-  // const handleProgress = (progress) => {
-  //   const { playedSeconds } = progress;
-  //   if (playedSeconds >= 10 && !viewed10Progress) {
-  //     window.fbq("trackCustom", "VideoViewed10Progress");
-  //     setViewed10Progress(true);
-  //   }
-  //   if (playedSeconds >= 60 && !viewed60Progress) {
-  //     window.fbq("trackCustom", "VideoViewed60Progress");
-  //     setViewed60Progress(true);
-  //   }
-  //   if (playedSeconds >= 180 && !viewedFull) {
-  //     window.fbq("trackCustom", "VideoViewedFull");
-  //     setViewedFull(true);
-  //   }
-  // };
-  const playerRef = useRef(null);
-  const [muted, setMuted] = useState(true);
 
-  const handleClick = () => {
-    const player = playerRef.current;
-    if (!playing) {
-      player.seekTo(0);
-      setMuted(false);
-      setPlaying(true);
-    } else {
-      player.seekTo(0);
-    }
-  };
+
   return (
     <div className="flex justify-center items-center">
       <div className="relative pb-6 lg:pb-0 w-5/6 lg:w-auto md:h-[420px] md:w-[740px] overflow-hidden">
         {!playing ? (
-          <div className="flex justify-center items-center absolute cursor-pointer w-full h-full z-50">
+          <div className="flex justify-center items-center absolute cursor-pointer w-full h-full z-50 overflow-hidden">
             <img
               src={Gif}
               alt="GIF"

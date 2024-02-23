@@ -26,13 +26,13 @@ const CalendlyFooter = () => {
         isVisible ? "translate-y-0" : "translate-y-full"
       }`}
     >
-      <div className="flex justify-center items-center space-x-6">
+      <div className="flex justify-center items-center gap-x-6">
         <h1 className="hidden lg:block text-3xl font-plus-400 text-gray-800">
           Schedule a Meeting With Our Team
         </h1>
         <div>
           <a href="#calendly">
-            <button className="text-xl font-poppins-400 text-gray-800 border-2 border-gray-800 rounded-3xl py-2 px-4 hover:bg-purple-800 hover:text-gray-300 transition duration-400">
+            <button className="text-xl font-poppins-400 text-gray-200 border-2 bg-purple-800 border-gray-800 rounded-3xl py-2 px-4 hover:bg-purple-300 hover:text-gray-800 transition duration-400">
               Schedule a Meeting
             </button>
           </a>
