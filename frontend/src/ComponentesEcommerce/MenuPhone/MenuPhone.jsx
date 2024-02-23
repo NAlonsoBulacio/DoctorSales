@@ -35,7 +35,7 @@ const MenuPhone = ({ menuOpen, handleMenuToggle }) => {
           href="#calendly"
           onClick={handleMenuToggle}
         >
-          Schedule a Meeting
+          Discovery a Call
         </a>
         <button className="w-full text-gray-800" onClick={handleMenuToggle}>
           <AiOutlineClose
