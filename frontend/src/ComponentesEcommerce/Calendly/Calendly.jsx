@@ -30,7 +30,7 @@ const Calendly = () => {
             ? "opacity-100 transition-opacity duration-[1s]"
             : "opacity-0"
         } block lg:hidden font-plus-400 text-2xl lg:text-5xl text-gray-700 px-2`}>
-          Agendá <span className="font-plus-500 text-purple-800">Tu Rreunión</span> <br/>Con Nosotros
+          Schedule <span className="font-plus-500 text-purple-800">Your Meeting</span> <br/>With Our Team
         </h1>
         <h1 
          ref={ref1} 
@@ -39,7 +39,7 @@ const Calendly = () => {
             ? "opacity-100 transition-opacity duration-[1s]"
             : "opacity-0"
         } hidden lg:block font-plus-400 text-2xl lg:text-5xl text-gray-700 `}>
-          Agendá <span className="font-plus-500 text-purple-800">Tu Rreunión</span> Con Nosotros
+          Schedule <span className="font-plus-500 text-purple-800">Your Meeting</span> With Our Team
         </h1>
       </div>
       <div className="w-full flex justify-center ">

@@ -29,7 +29,7 @@ const OurTools = () => {
             ? "opacity-100 transition-opacity duration-[1s]"
             : "opacity-0"
         } text-gray-800 text-4xl font-poppins-400 tracking-wide`}>
-            Nuestras Integraciones<span className="text-purple-800">:</span>
+            Our Integrations<span className="text-purple-800">:</span>
           </h1>
         </div>
         <div ref={ref2} className={`${

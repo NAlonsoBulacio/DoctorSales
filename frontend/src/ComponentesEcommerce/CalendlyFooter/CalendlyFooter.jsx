@@ -28,12 +28,12 @@ const CalendlyFooter = () => {
     >
       <div className="flex justify-center items-center space-x-6">
         <h1 className="hidden lg:block text-3xl font-plus-400 text-gray-800">
-          Agenda tu reunion con nosotros
+          Schedule a Meeting With Our Team
         </h1>
         <div>
           <a href="#calendly">
             <button className="text-xl font-poppins-400 text-gray-800 border-2 border-gray-800 rounded-3xl py-2 px-4 hover:bg-purple-800 hover:text-gray-300 transition duration-400">
-              Agendar Demo
+              Schedule a Meeting
             </button>
           </a>
         </div>
