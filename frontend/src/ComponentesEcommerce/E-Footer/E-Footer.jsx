@@ -26,11 +26,12 @@ const Footer = () => {
       <div className="px-4 lg:px-32 pt-8 lg:pt-20 pb-0 lg:pb-16">
         <div className="w-full flex justify-center items-end space-x-4 lg:space-x-14">
           <a href="#about" className="cursor-pointer font-poppins-500 text-xl lg:text-2xl text-gray-700 hover:text-purple-700">
-            Sobre <br /> Nosotros
+            About <br /> Us
           </a>
           <img className="w-20 lg:w-28" src={logo} alt="logo-violeta" />
           <a onClick={scrollToProcess} className="cursor-pointer font-poppins-500 text-xl lg:text-2xl text-gray-700 hover:text-purple-700">
-            Nuestros <br /> Procesos
+            Our <br /> processes
+
           </a>
         </div>
         <div className="w-full flex justify-center ">

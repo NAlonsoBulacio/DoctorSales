@@ -1,30 +1,48 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./MenuPhone.css";
 import { AiOutlineClose } from "react-icons/ai";
+import logo from "../../assets/logo-violette.png";
 const MenuPhone = ({ menuOpen, handleMenuToggle }) => {
-  useEffect(() => {
-    // Al cambiar el estado de menuOpen, se establece el desbordamiento del cuerpo según sea necesario
-    document.body.style.overflow = menuOpen ? "hidden" : "auto";
-
-    // Limpia el estilo al desmontar el componente para evitar efectos secundarios
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [menuOpen]); // Se ejecuta cuando cambia menuOpen
-
   return (
-    <div className="menu-phone absolute top-0 right-0 w-screen h-screen flex justify-center items-center font-poppins-400">
-      <div className="menu-container w-full flex justify-center items-center pr-[34px]">
-      <a href="/" onClick={handleMenuToggle}>Inicio</a> 
-      <a href="#process" onClick={handleMenuToggle}>Nuestro Proceso</a>
-      <a href="#about" onClick={handleMenuToggle}>Sobre Nosotros</a>
-      <a href="#calendly" onClick={handleMenuToggle}>Agendar Demo</a>
-      <button onClick={handleMenuToggle}>
-        <AiOutlineClose
-          className=""
-          style={{ height: "30px", width: "30px" }}
-        />
-      </button>
+    <div className={`menu-phone ${menuOpen ? "slide-in" : ""} flex flex-wrap justify-start items-start bg-gray-300 border-2 border-gray-500 fixed top-0 right-0 w-screen h-screen font-poppins-400 pb-8`}>
+      <div className="mx-auto flex items-center px-10 py-2 pt-2 justify-center lg:hidden">
+        <div className="flex items-center">
+          <a href="/">
+            <img className="w-[80px] " src={logo} alt="Logo" />
+          </a>
+        </div>
+      </div>
+      <div className="w-full menu-container flex flex-wrap justify-start items-center px-6 text-left ">
+        <a className="w-full text-gray-800" href="/" onClick={handleMenuToggle}>
+          Home
+        </a>
+        <a
+          className="w-full text-gray-800"
+          href="#process"
+          onClick={handleMenuToggle}
+        >
+          Our Process
+        </a>
+        <a
+          className="w-full text-gray-800"
+          href="#about"
+          onClick={handleMenuToggle}
+        >
+          About Us
+        </a>
+        <a
+          className="w-full text-gray-800"
+          href="#calendly"
+          onClick={handleMenuToggle}
+        >
+          Schedule a Meeting
+        </a>
+        <button className="w-full text-gray-800" onClick={handleMenuToggle}>
+          <AiOutlineClose
+            className=""
+            style={{ height: "30px", width: "30px" }}
+          />
+        </button>
       </div>
     </div>
   );
