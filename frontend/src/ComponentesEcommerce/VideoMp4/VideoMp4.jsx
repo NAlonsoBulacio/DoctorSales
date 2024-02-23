@@ -11,7 +11,6 @@ const VideoMp4 = () => {
   const [viewed10Progress, setViewed10Progress] = useState(false);
   const [viewed60Progress, setViewed60Progress] = useState(false);
   const [viewedFull, setViewedFull] = useState(false);
-  const playerRef = useRef(null);
 
   useEffect(() => {
     if (!playingLoop) {
@@ -44,6 +43,19 @@ const VideoMp4 = () => {
   //     setViewedFull(true);
   //   }
   // };
+  const playerRef = useRef(null);
+  const [muted, setMuted] = useState(true);
+
+  const handleClick = () => {
+    const player = playerRef.current;
+    if (!playing) {
+      player.seekTo(0);
+      setMuted(false);
+      setPlaying(true);
+    } else {
+      player.seekTo(0);
+    }
+  };
   return (
     <div className="flex justify-center items-center">
       <div className="relative pb-6 lg:pb-0 w-5/6 lg:w-auto md:h-[420px] md:w-[740px] overflow-hidden">
@@ -82,8 +94,7 @@ const VideoMp4 = () => {
             controls
             width="100%"
             height="100%"
-            onProgress={handleProgress}
-            preload="auto"
+
           />
         )}
       </div>
