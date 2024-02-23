@@ -28,9 +28,7 @@ const Home = () => {
               } hidden lg:flex text-3xl lg:text-6xl font-plus-600 text-gray-200`}
               style={{ lineHeight: "1.3" }}
             >
-              Nuevo video de x minutos revela cual es el sistema probado de x
-              pasos para escalar
-              <br /> una marca ecommerce a 7 cifras
+              New x-minute video reveals the proven x-step system to scale an e-commerce brand to 7 figures
             </h1>
             <h1
               className={`${
@@ -40,8 +38,7 @@ const Home = () => {
               } lg:hidden text-3xl lg:text-6xl font-plus-600 text-gray-200`}
               style={{ lineHeight: "1.3" }}
             >
-              Nuevo video de x minutos revela cual es el sistema probado de x
-              pasos para escalar una marca ecommerce a 7 cifras
+             New x-minute video reveals the proven x-step system to scale an<br/> e-commerce brand<br/> to 7 figures
             </h1>
           </div>
           <div ref={ref2}>
@@ -50,15 +47,14 @@ const Home = () => {
                   ? "opacity-100 transition-opacity duration-[1s]"
                   : "opacity-0"
               } hidden lg:flex text-xl lg:text-2xl font-plus-300 text-gray-200`}>
-              Sin tener que depender de Facebook Adds, agencias o influencers.
+             Without having to rely on Facebook Ads, agencies, or influencers.
             </h2>
             <h2 className={`${
                 inView2
                   ? "opacity-100 transition-opacity duration-[1s]"
                   : "opacity-0"
               } lg:hidden text-xl lg:text-2xl font-plus-300 text-gray-200`}>
-              Sin tener que depender de <br />
-              Facebook Adds, agencias o influencers.
+              Without having to rely on <br/>Facebook Ads, agencies, or influencers.
             </h2>
           </div>
         </div>

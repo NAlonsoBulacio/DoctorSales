@@ -47,6 +47,34 @@ const VideoMp4 = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="relative pb-6 lg:pb-0 w-5/6 lg:w-auto md:h-[420px] md:w-[740px] overflow-hidden">
+        {!playing ? (
+          <div
+            style={{
+              position: "relative",
+              cursor: "pointer",
+              width: "100%",
+              height: "100%",
+            }}
+          >
+            <img
+              src={Gif}
+              alt="GIF"
+              onClick={togglePlay}
+              style={{ cursor: "pointer", width: "100%", height: "100%" }}
+            />
+            <button
+              onClick={togglePlay}
+              className="play-button flex justify-center items-center rounded-xl text-white h-[62px] md:h-[100px] w-[100px] md:w-[145px]"
+              style={{
+                border: "none",
+                cursor: "pointer",
+                outline: "none",
+              }}
+            >
+              <FaPlay className="h-auto w-[37px] md:w-[70px]" />
+            </button>
+          </div>
+        ) : (
           <ReactPlayer
             ref={playerRef}
             url={vsl}
@@ -56,6 +84,7 @@ const VideoMp4 = () => {
             height="100%"
             onProgress={handleProgress}
           />
+        )}
       </div>
     </div>
   );
