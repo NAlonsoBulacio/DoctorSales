@@ -82,8 +82,8 @@ const VideoMp4 = () => {
             controls
             width="100%"
             height="100%"
-            onProgress={handleProgress}
-            preload="auto"
+            // onProgress={handleProgress}
+            // preload="auto"
           />
         )}
       </div>
