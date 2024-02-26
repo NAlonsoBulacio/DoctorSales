@@ -38,7 +38,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="w-full flex flex-wrap justify-center items-start gap-y-4">
-          <div className="w-full lg:w-1/2 rounded-lg overflow-hidden"
+          <div className="w-full lg:w-1/2 rounded-lg overflow-hidden mx-2 lg-mx-0"
           ref={ref3}
           >
             <img
