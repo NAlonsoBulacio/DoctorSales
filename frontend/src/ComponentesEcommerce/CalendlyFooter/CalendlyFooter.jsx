@@ -33,7 +33,7 @@ const CalendlyFooter = () => {
         <div>
           <a href="#calendly">
             <button className="text-xl font-poppins-400 text-gray-200 border-2 bg-purple-800 border-gray-800 rounded-3xl py-2 px-4 hover:bg-purple-300 hover:text-gray-800 transition duration-400">
-              Discovery a Call
+              Schedule a Discovery a Call
             </button>
           </a>
         </div>
