@@ -31,16 +31,17 @@ const VideoMp4 = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="flex justify-center relative pb-6 lg:pb-0 w-[370px] lg:w-auto md:h-[420px] md:w-[740px] overflow-hidden">
-        <div className="max-w-[410px] w-full h-[380px] md:h-[420px] ">
+        <div className="max-w-[410px] w-full h-[380px] md:h-[420px]">
           {!playing ? (
-            <div className="flex justify-center items-center absolute cursor-pointer w-full h-[380px] md:h-[420px] z-50 overflow-hidden">
-              <img
-                src={Gif}
-                alt="GIF"
-                onClick={togglePlay}
-                className="cursor-pointer"
-                style={{ cursor: "pointer", width: "100%", height: "100%" }}
-              />
+            <div className="flex justify-center items-center absolute cursor-pointer h-[380px] md:h-[420px] z-50 overflow-hidden">
+              <div className="">
+                <img
+                  src={Gif}
+                  alt="GIF"
+                  onClick={togglePlay}
+                  className="cursor-pointer w-full h-full object-cover"
+                />
+              </div>
               <button
                 onClick={togglePlay}
                 className="play-button flex justify-center items-center rounded-xl text-white h-[62px] md:h-[100px] w-[100px] md:w-[145px]"
