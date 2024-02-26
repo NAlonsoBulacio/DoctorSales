@@ -21,7 +21,7 @@ const Calendly = () => {
     threshold: 0.5,
   });
   return (
-    <div id="calendly" className="w-full flex flex-wrap justify-center relative">
+    <div id="calendly" className="w-full flex flex-wrap justify-center relative px-6 lg:px-0 ">
       <div className="w-full">
         <h1 
          ref={ref3} 
