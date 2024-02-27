@@ -96,7 +96,7 @@ const AboutUs = () => {
                     : "opacity-0"
                 } text-xl`}
               >
-                We also complement your current marketing team by taking on different tasks.
+                Also, when we've initiated a new relationship with some of our clients, we've been able to complement their existing marketing team. We developed a new sales funnel, distinct from the one they already had in operation, with the sole aim of increasing their revenue.
               </h1>
             </div>
             <div>
