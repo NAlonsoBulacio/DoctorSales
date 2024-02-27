@@ -69,15 +69,22 @@ const Calendly = () => {
           ref={ref2}
           className={`${
             inView2
-              ? "opacity-100 transition-opacity duration-1000"
+              ? " opacity-100 transition-opacity duration-1000"
               : "opacity-0"
-          } w-full`}
+          } h-[775px] lg:h-[688px] w-full`}
         >
           <InlineWidget
-            styles={{
-              height: "658px",
-            }}
-            url="https://calendly.com/nicoalonso99-na/30min"
+              url="https://calendly.com/doctorsales/discovery-call"
+              pageSettings={{
+                backgroundColor: "ffffff",
+                hideEventTypeDetails: false,
+                hideLandingPageDetails: true,
+                primaryColor: "00a2ff",
+                textColor: "4d5055",
+              }}
+              styles={{
+                height: "100%",
+              }}
           />
         </div>
       </div>
