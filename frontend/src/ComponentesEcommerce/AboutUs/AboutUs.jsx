@@ -37,7 +37,7 @@ const AboutUs = () => {
             <hr className="my-8 border-[1.5px] border-purple-400" />
           </div>
         </div>
-        <div className="w-full flex-wrap lg:flex justify-center items-start gap-y-4">
+        <div className="w-full flex-wrap lg:flex justify-center items-start space-y-4">
           <div className="w-full lg:w-1/2 rounded-lg overflow-hidden mx-2 lg-mx-0"
           ref={ref3}
           >
