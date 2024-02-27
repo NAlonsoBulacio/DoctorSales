@@ -1,6 +1,8 @@
 import React from "react";
 import './ClientReview.css';
 import { useInView } from "react-intersection-observer";
+import review1 from "../../assets/clients-review/review1.jpeg";
+import review2 from "../../assets/clients-review/review2.jpeg";
 const ClientReview = () => {
   const [ref1, inView1] = useInView({
     triggerOnce: true,
@@ -8,22 +10,19 @@ const ClientReview = () => {
   });
   const reviews = [
     {
-      reviewText: `"Nos hemos apoyado de las soluciones de Doctor Sales porque estas nos van
-  a ayudar a llegar a todos esos clientes que tenemos, de manera
-  ágil, de manera rápida"
+      reviewText: `"We're truly grateful for your service, very professional 👏🏼
+      Thank you Ignacio for your help and support, I really appreciate it! "
 `,
-      name: "Pedro Suarez",
-      positionCompany: "CEO de Shell Brothers",
-      icon: "https://cloud.strapi.io/assets/people/visma--rasmus-theilso-madsen.png",
+      name: "Kristina Tatarchuk",
+      positionCompany: "Director of a Libertex franchise.",
+      icon: review1,
     },
     {
-      reviewText: `"Nos hemos apoyado de las soluciones de Doctor Sales porque estas nos van
-  a ayudar a llegar a todos esos clientes que tenemos, de manera
-  ágil, de manera rápida"
+      reviewText: `"I want to show you the numbers to let you see how well you're doing your job! Congratulations!!"
 `,
-      name: "Pedro Suarez",
-      positionCompany: "CEO de Shell Brothers",
-      icon: "https://cloud.strapi.io/assets/people/visma--rasmus-theilso-madsen.png",
+      name: "Jorge Niel ",
+      positionCompany: "CMO of Synagro",
+      icon: review2,
     },
   ];
 
@@ -44,7 +43,7 @@ const ClientReview = () => {
                 {review.reviewText}
               </h1>
             </div>
-            <div className="w-full flex flex-wrap">
+            <div className="w-full flex flex-wrap justify-between">
               <div className="w-1/2 flex flex-wrap justify-start">
                 <span className="w-full text-purple-900 text-2xl font-noto-400 text-left py-2">
                   {review.name}
@@ -53,8 +52,8 @@ const ClientReview = () => {
                   {review.positionCompany}
                 </h1>
               </div>
-              <div className="w-1/2 flex justify-end">
-                <img src={review.icon} alt="foto-review" />
+              <div className="w-32 rounded-full overflow-hidden flex justify-end">
+                <img className="w-full object-cover" src={review.icon} alt="foto-review" />
               </div>
             </div>
           </div>
