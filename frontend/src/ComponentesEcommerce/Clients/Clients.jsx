@@ -5,6 +5,7 @@ import ogl from '../../assets/logos-clients/ogl.png';
 import compex from '../../assets/logos-clients/compex.png';
 import mistico from '../../assets/logos-clients/mistic.png';
 import synagro from '../../assets/logos-clients/synagro.png';
+import valk from "../../assets/logos-clients/valk.png";
 import { useInView } from "react-intersection-observer";
 const Clients = () => {
   const [ref1, inView1] = useInView({
@@ -23,6 +24,7 @@ const Clients = () => {
     ogl,
     libertex,
     agefit,
+    valk,
   ];
 
   return (
