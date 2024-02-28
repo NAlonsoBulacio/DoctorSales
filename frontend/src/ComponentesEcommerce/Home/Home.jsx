@@ -28,7 +28,7 @@ const Home = () => {
               } hidden xl:flex lg:text-7xl font-lato-700 text-gray-200`}
               style={{ lineHeight: "1.2", fontSize: "68px" }}
             >
-              New 2-minute video reveals the proven 3-step system to scale an skincare e-commerce brand to 7 figures
+              New 2-minute video reveals the proven 3-step system to scale a skincare e-commerce brand to 7 figures
             </h1>
             <h1
               className={`${
@@ -38,7 +38,7 @@ const Home = () => {
               } hidden lg:flex xl:hidden text-3xl lg:text-6xl font-lato-700 text-gray-200`}
               style={{ lineHeight: "1.2", fontSize: "57px" }}
             >
-              New 2-minute video reveals the proven 3-step system to scale an skincare e-commerce brand to 7 figures
+              New 2-minute video reveals the proven 3-step system to scale a skincare e-commerce brand to 7 figures
             </h1>
             <h1
               className={`${
@@ -48,7 +48,7 @@ const Home = () => {
               } lg:hidden lg:text-6xl font-lato-700 text-gray-200`}
               style={{ lineHeight: "1.2", fontSize:"27px" }}
             >
-             New 2-minute video reveals the proven 3-step system to scale an Skincare E-Commerce brand to 7 figures
+             New 2-minute video reveals the proven 3-step system to scale a Skincare E-Commerce brand to 7 figures
             
             </h1>
           </div>
