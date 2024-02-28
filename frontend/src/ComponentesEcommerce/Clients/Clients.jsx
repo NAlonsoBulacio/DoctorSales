@@ -44,7 +44,7 @@ const Clients = () => {
           inView1
             ? "opacity-100 transition-opacity duration-[1s]"
             : "opacity-0"
-        } lg:hidden text-gray-800 text-2xl font-plus-400 tracking-wide px-2`}>
+        } lg:hidden text-gray-800 text-3xl font-plus-400 tracking-wide px-2`}>
           The Trusted <span className="text-purple-800 font-plus-500">Growth Partner</span>&nbsp;For
           <span className="text-purple-900">:</span>
         </h1>
