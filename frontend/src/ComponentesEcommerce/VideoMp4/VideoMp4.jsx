@@ -10,8 +10,6 @@ const VideoMp4 = () => {
   const [videoClicked, setVideoClicked] = useState(false);
   const [muted, setMuted] = useState(true);
   const [first, setFirst] = useState(true);
-
-  // const [playerLoaded, setPlayerLoaded] = useState(false);
   const playerRef = useRef(null);
   useEffect(() => {
     if (!playingLoop) {
@@ -21,19 +19,6 @@ const VideoMp4 = () => {
     }
   }, [playingLoop]);
 
-  // const togglePlay = () => {
-  //   if (!playing && !videoClicked) {
-  //     setVideoClicked(true);
-  //     setMuted(false); // Desmutear el video
-  //     setPlaying(true);
-  //     setFirst(false);
-  //   } else {
-  //     // Si está reproduciendo y se hace clic, reiniciar desde el principio y desmutear
-  //     setMuted(false); // Desmutear el video
-  //     playerRef.current.seekTo(0); // Reiniciar desde el principio
-  //     setFirst(false);
-  //   }
-  // };
   const togglePlay = () => {
     if (first === true) {
       setMuted(false);
@@ -41,9 +26,6 @@ const VideoMp4 = () => {
       setFirst(false);
     }
   };
-  // const handlePlayerReady = () => {
-  //   setPlayerLoaded(true);
-  // };
 
   return (
     <div className="flex justify-center items-center">
@@ -70,6 +52,8 @@ const VideoMp4 = () => {
               width="100%"
               height="100%"
               muted={muted}
+              autoPlay
+              playsinline
             />
           </div>
         </div>
