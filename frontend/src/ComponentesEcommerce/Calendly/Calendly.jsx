@@ -32,7 +32,7 @@ const Calendly = () => {
             inView3
               ? "opacity-100 transition-opacity duration-[1s]"
               : "opacity-0"
-          } block lg:hidden font-plus-400 text-2xl lg:text-5xl text-gray-700 px-2`}
+          } block lg:hidden font-plus-400 text-3xl lg:text-5xl text-gray-700`}
         >
           Schedule{" "}
           <span className="font-plus-500 text-purple-800">Your Meeting</span>{" "}
@@ -58,13 +58,13 @@ const Calendly = () => {
         </div>
       </div>
       <div className="w-full flex flex-wrap justify-center">
-        <div className="hidden lg:flex w-full justify-end absolute top-0 right-10">
+        {/* <div className="hidden lg:flex w-full justify-end absolute top-0 right-10">
           <img
             src="https://strapi.io/_next/static/images/05cae2bf306c44b4a82fda253514822e.svg"
             className=""
             alt="dots"
           />
-        </div>
+        </div> */}
         <div
           ref={ref2}
           className={`${

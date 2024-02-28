@@ -15,3 +15,7 @@
 .play-button:hover {
   transform: translate(-50%, -50%) scale(1.2); /* Cambia el tamaño al 120% en hover */
 }
+
+.volume-button {
+  background-color: rgba(51, 50, 50, 0.736); /* Gris semi-transparente */
+}

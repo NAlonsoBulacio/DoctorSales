@@ -19,14 +19,14 @@ const Home = () => {
       </div>
       <div className="w-full flex flex-wrap justify-center space-y-4 lg:space-y-10">
         <div className="w-full flex flex-wrap justify-center items-center space-y-4 lg:space-y-8">
-          <div ref={ref1} className={`px-[10px] lg:px-24`}>
+          <div ref={ref1} className={`px-[10px] lg:px-10`}>
             <h1
               className={`${
                 inView1
                   ? "opacity-100 transition-opacity duration-[1s]"
                   : "opacity-0"
-              } hidden xl:flex text-3xl lg:text-7xl font-lato-700 text-gray-200`}
-              style={{ lineHeight: "1.2" }}
+              } hidden xl:flex lg:text-7xl font-lato-700 text-gray-200`}
+              style={{ lineHeight: "1.2", fontSize: "68px" }}
             >
               New 2-minute video reveals the proven 3-step system to scale an skincare e-commerce brand to 7 figures
             </h1>
@@ -36,7 +36,7 @@ const Home = () => {
                   ? "opacity-100 transition-opacity duration-[1s]"
                   : "opacity-0"
               } hidden lg:flex xl:hidden text-3xl lg:text-6xl font-lato-700 text-gray-200`}
-              style={{ lineHeight: "1.2" }}
+              style={{ lineHeight: "1.2", fontSize: "57px" }}
             >
               New 2-minute video reveals the proven 3-step system to scale an skincare e-commerce brand to 7 figures
             </h1>
