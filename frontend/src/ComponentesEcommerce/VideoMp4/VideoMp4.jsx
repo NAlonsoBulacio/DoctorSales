@@ -47,7 +47,7 @@ const VideoMp4 = () => {
             <ReactPlayer
               ref={playerRef}
               url={vsl}
-   
+              playing={playing}
               controls
               width="100%"
               height="100%"
