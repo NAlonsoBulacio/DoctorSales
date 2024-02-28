@@ -10,8 +10,6 @@ const VideoMp4 = () => {
   const [videoClicked, setVideoClicked] = useState(false);
   const [muted, setMuted] = useState(true);
   const [first, setFirst] = useState(true);
-
-  // const [playerLoaded, setPlayerLoaded] = useState(false);
   const playerRef = useRef(null);
   useEffect(() => {
     if (!playingLoop) {
@@ -21,19 +19,6 @@ const VideoMp4 = () => {
     }
   }, [playingLoop]);
 
-  // const togglePlay = () => {
-  //   if (!playing && !videoClicked) {
-  //     setVideoClicked(true);
-  //     setMuted(false); // Desmutear el video
-  //     setPlaying(true);
-  //     setFirst(false);
-  //   } else {
-  //     // Si está reproduciendo y se hace clic, reiniciar desde el principio y desmutear
-  //     setMuted(false); // Desmutear el video
-  //     playerRef.current.seekTo(0); // Reiniciar desde el principio
-  //     setFirst(false);
-  //   }
-  // };
   const togglePlay = () => {
     if (first === true) {
       setMuted(false);
@@ -41,26 +26,15 @@ const VideoMp4 = () => {
       setFirst(false);
     }
   };
-  // const handlePlayerReady = () => {
-  //   setPlayerLoaded(true);
-  // };
 
   return (
     <div className="flex justify-center items-center">
       <div className="flex justify-center relative pb-6 lg:pb-0 w-[370px] lg:w-auto md:h-[420px] md:w-[740px] overflow-hidden">
         <div className="max-w-[410px] w-full  h-[380px] md:h-[420px]">
-          {first ? (
-            <div className="z-50 cursor-pointer bg-transparent absolute top-0 left-0 w-full h-full flex justify-end items-start px-4 py-4"
-            onClick={togglePlay}
-            >
-              <div className="cursor-pointer px-2 py-2 rounded-3xl volume-button text-gray-100">Presiona para activar el volumen 🔊</div>
-               </div>
-          ) : (
-            ""
-          )}
+
           <div
             className={`${first ? "cursor-pointer" : ""}`}
-            onClick={togglePlay}
+
           >
             <ReactPlayer
               ref={playerRef}
