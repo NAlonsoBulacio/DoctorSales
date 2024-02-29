@@ -31,14 +31,14 @@ const EcommerceLanding = () => {
 
   return (
     <div id="home" className="w-full">
-      <Home />
+      <Home change="an E-Commerce" video="2"/>
       <div className="bg-gray-100 py-12 lg:py-24 space-y-14">
         <Calendly />
         <Clients />
       </div>
       <div id="about" className=""
        style={{ backgroundImage: `url(${animatedImage})` }}>
-        <AboutUs />
+        <AboutUs change="E-Commerce"/>
       </div>
       <div className="bg-gray-100 space-y-14 lg:space-y-24 py-10 lg:py-20 ">
         <ClientReview />
