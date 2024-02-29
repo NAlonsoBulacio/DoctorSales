@@ -4,7 +4,8 @@ import "./VideoMp4.css";
 import { FaPlay } from "react-icons/fa";
 import Gif from "../../assets/gif-ds.gif";
 import vsl from "../../assets/vsl.mp4";
-const VideoMp4 = () => {
+import vsl2 from "../../assets/vsl2.mp4";
+const VideoMp4 = ({video}) => {
   const [playing, setPlaying] = useState(true);
   const [playingLoop, setPlayingLoop] = useState(false);
   const [videoClicked, setVideoClicked] = useState(false);
@@ -46,7 +47,7 @@ const VideoMp4 = () => {
           >
             <ReactPlayer
               ref={playerRef}
-              url={vsl}
+              url={video === "1" ? vsl : vsl2}
               playing={playing}
               controls
               width="100%"

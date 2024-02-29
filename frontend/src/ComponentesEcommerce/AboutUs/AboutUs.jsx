@@ -1,7 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import portada from "../../assets/portadaCap1.png";
-const AboutUs = () => {
+const AboutUs = ({change}) => {
   const [ref1, inView1] = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -118,7 +118,7 @@ const AboutUs = () => {
                     : "opacity-0"
                 } text-xl`}
               >
-               Surprisingly, 99% of skincare brands in the e-commerce space have yet to implement it.
+               {`Surprisingly, 99% of ${change} brands in the e-commerce space have yet to implement it.`}
               </h1>
             </div>
             <div>
