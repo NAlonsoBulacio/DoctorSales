@@ -9,10 +9,8 @@ import Footer from "../../ComponentesEcommerce/E-Footer/E-Footer";
 import animatedImage from '../../assets/animated-shape.png';
 import GoHomeButton from "../../ComponentesEcommerce/GoHome/GoHome";
 import CalendlyFooter from "../../ComponentesEcommerce/CalendlyFooter/CalendlyFooter";
-import skincareVsl from "../../assets/vsl2.mp4";
-import "./SkincareLanding.css";
-const SkincareLanding = () => {
-
+import "./DietaryLanding.css";
+const EcommerceLanding = () => {
  const [showGoHomeButton, setShowGoHomeButton] = useState(false);
 
   useEffect(() => {
@@ -30,16 +28,17 @@ const SkincareLanding = () => {
     };
   }, []);
 
+  const dietaryVsl = "https://res.cloudinary.com/doczyujqf/video/upload/v1709812069/Doctor%20Sales/DietaryVsl.mp4";
   return (
     <div id="home" className="w-full">
-      <Home change="a Skincare e-commerce" video={skincareVsl}/>
+      <Home change="a Dietary Supplements E-Commerce" video={dietaryVsl} videoId={"1"} />
       <div className="bg-gray-100 py-12 lg:py-24 space-y-14">
         <Calendly />
         <Clients />
       </div>
       <div id="about" className=""
        style={{ backgroundImage: `url(${animatedImage})` }}>
-        <AboutUs change="Skincare"/>
+        <AboutUs change="Dietary Supplements"/>
       </div>
       <div className="bg-gray-100 space-y-14 lg:space-y-24 py-10 lg:py-20 ">
         <ClientReview />
@@ -57,4 +56,4 @@ const SkincareLanding = () => {
   );
 };
 
-export default SkincareLanding;
+export default EcommerceLanding;

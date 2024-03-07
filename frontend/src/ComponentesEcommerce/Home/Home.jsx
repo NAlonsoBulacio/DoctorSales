@@ -3,7 +3,7 @@ import Header from "../E-Header/E-Header";
 import VideoMp4 from "../VideoMp4/VideoMp4";
 import "./Home.css";
 import { useInView } from "react-intersection-observer";
-const Home = ({change, video}) => {
+const Home = ({change, video, videoId}) => {
   const [ref1, inView1] = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -70,7 +70,7 @@ const Home = ({change, video}) => {
           </div>
         </div>
         <div id="process" className="flex justify-center pb-0 lg:pb-16">
-          <VideoMp4 video={video}/>
+          <VideoMp4 vsl={video} videoId={videoId} />
         </div>
       </div>
     </div>
