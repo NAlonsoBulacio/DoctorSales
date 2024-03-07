@@ -1,0 +1,9 @@
+.background-about {
+    background-image: url('../../assets/animated-shape.png');
+    background-size: cover; 
+    }
+
+    html {
+        scroll-behavior: smooth;
+      }
+      

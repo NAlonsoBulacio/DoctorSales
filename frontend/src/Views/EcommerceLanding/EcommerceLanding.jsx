@@ -9,6 +9,8 @@ import Footer from "../../ComponentesEcommerce/E-Footer/E-Footer";
 import animatedImage from '../../assets/animated-shape.png';
 import GoHomeButton from "../../ComponentesEcommerce/GoHome/GoHome";
 import CalendlyFooter from "../../ComponentesEcommerce/CalendlyFooter/CalendlyFooter";
+import ecommerceVsl from "../../assets/vsl.mp4";
+
 import "./EcommerceLanding.css";
 const EcommerceLanding = () => {
 
@@ -31,7 +33,7 @@ const EcommerceLanding = () => {
 
   return (
     <div id="home" className="w-full">
-      <Home change="an E-Commerce" video="2"/>
+      <Home change="an E-Commerce" video={ecommerceVsl}/>
       <div className="bg-gray-100 py-12 lg:py-24 space-y-14">
         <Calendly />
         <Clients />
