@@ -27,7 +27,7 @@ const VideoMp4 = ({vsl, videoId}) => {
   return (
     <div className="flex justify-center items-center">
       <div className="flex justify-center relative pb-6 lg:pb-0 w-[370px] lg:w-auto md:h-[420px] md:w-[740px] overflow-hidden">
-        <div className={`${videoId ? "max-w-[810px]" : "max-w-[410px]"} w-full  h-[380px] md:h-[420px]`}>
+        <div className={`${videoId ? "max-w-[810px]" : "max-w-[410px]"} w-full  ${ videoId ? "h-[240px]" : "h-[380px]"} md:h-[420px]`}>
           {first ? (
             <div className="z-50 cursor-pointer bg-transparent absolute top-0 left-0 w-full h-full flex justify-end items-start px-4 py-4"
             onClick={togglePlay}
