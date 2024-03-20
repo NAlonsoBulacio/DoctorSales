@@ -9,14 +9,14 @@ const ClientReview = () => {
     threshold: 0.5,
   });
   const reviews = [
-    {
-      reviewText: `"We're truly grateful for your service, very professional 👏🏼
-      Thank you Ignacio for your help and support, I really appreciate it! "
-`,
-      name: "Kristina Tatarchuk",
-      positionCompany: "Director of a Libertex franchise.",
-      icon: review1,
-    },
+//     {
+//       reviewText: `"We're truly grateful for your service, very professional 👏🏼
+//       Thank you Ignacio for your help and support, I really appreciate it! "
+// `,
+//       name: "Kristina Tatarchuk",
+//       positionCompany: "Director of a Libertex franchise.",
+//       icon: review1,
+//     },
     {
       reviewText: `"I want to show you the numbers to let you see how well you're doing your job! Congratulations!!"
 `,
