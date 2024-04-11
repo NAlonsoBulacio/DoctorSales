@@ -74,7 +74,7 @@ const Calendly = () => {
           } h-[775px] lg:h-[688px] w-full`}
         >
           <InlineWidget
-              url="https://calendly.com/doctorsales/discovery-call"
+              url="https://calendly.com/ignacio-galindo/discovery-call"
               pageSettings={{
                 backgroundColor: "ffffff",
                 hideEventTypeDetails: false,
