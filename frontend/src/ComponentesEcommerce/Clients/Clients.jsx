@@ -37,7 +37,7 @@ const Clients = () => {
             ? "opacity-100 transition-opacity duration-[1s]"
             : "opacity-0"
         } hidden lg:flex text-gray-800 text-2xl lg:text-5xl font-plus-400 tracking-wide`}>
-          The Trusted &nbsp;<span className="text-purple-800 font-plus-500">Growth Partner</span>&nbsp;For
+          El&nbsp;<span className="text-purple-800 font-plus-600">Growth Partner</span>&nbsp;Confiable Para
           <span className="text-purple-900">:</span>
         </h1>
         <h1 className={`${

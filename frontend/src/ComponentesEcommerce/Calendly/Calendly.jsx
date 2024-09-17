@@ -34,10 +34,10 @@ const Calendly = () => {
               : "opacity-0"
           } block lg:hidden font-plus-400 text-3xl lg:text-5xl text-gray-700`}
         >
-          Schedule{" "}
-          <span className="font-plus-500 text-purple-800">Your Meeting</span>{" "}
+          Agendá{" "}
+          <span className="font-plus-600 text-purple-800">Tu Llamada</span>{" "}
           <br />
-          With Our Team
+         Con Nuestro Equipo
         </h1>
         <h1
           ref={ref1}
@@ -47,9 +47,10 @@ const Calendly = () => {
               : "opacity-0"
           } hidden lg:block font-plus-400 text-2xl lg:text-5xl text-gray-700 `}
         >
-          Schedule{" "}
-          <span className="font-plus-500 text-purple-800">Your Meeting</span>{" "}
-          With Our Team
+           Agendá{" "}
+          <span className="font-plus-600 text-purple-800">Tu Llamada</span>{" "}
+         
+         Con Nuestro Equipo
         </h1>
       </div>
       <div className="w-full flex justify-center ">
@@ -71,7 +72,7 @@ const Calendly = () => {
             inView2
               ? " opacity-100 transition-opacity duration-1000"
               : "opacity-0"
-          } h-[775px] lg:h-[688px] w-full`}
+          } h-[995px] lg:h-[688px] w-full`}
         >
           <InlineWidget
               url="https://calendly.com/ignacio-galindo/discovery-call"
