@@ -17,11 +17,11 @@ const Header = () => {
       >
         <div className="flex items-center">
           <a href="/">
-            <img className="w-[80px] " src={logo} alt="Logo" />
+            <img className="w-[50px] " src={logo} alt="Logo" />
           </a>
         </div>
         <button className="hamburguer" onClick={handleMenuToggle}>
-          <img src={menu} alt="MI-MENU" width={64} />
+          <img src={menu} alt="MI-MENU" width={35} />
         </button>
       </div>
       <div className="hidden lg:flex w-full h-32 items-center justify-center px-20 bg-transparent">

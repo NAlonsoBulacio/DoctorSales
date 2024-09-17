@@ -9,10 +9,7 @@ const OurTools = () => {
     triggerOnce: true,
     threshold: 0.5,
   });
-  const [ref2, inView2] = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
+
   const icons = [
     meta,
     google,
@@ -29,10 +26,10 @@ const OurTools = () => {
             ? "opacity-100 transition-opacity duration-[1s]"
             : "opacity-0"
         } text-gray-800 text-4xl font-poppins-400 tracking-wide`}>
-            Our Integrations<span className="text-purple-800">:</span>
+            Nuestras Integraciones<span className="text-purple-800">:</span>
           </h1>
         </div>
-        <div ref={ref2} className={`${
+        <div  className={`${
           inView1
             ? "opacity-100 transition-opacity duration-[1s]"
             : "opacity-0"

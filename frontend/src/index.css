@@ -145,6 +145,16 @@
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
   }
+  .font-lato-500 {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .font-lato-600 {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
   .font-lato-700 {
     font-family: "Lato", sans-serif;
     font-weight: 700;
