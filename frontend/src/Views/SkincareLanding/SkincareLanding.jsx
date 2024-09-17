@@ -9,7 +9,6 @@ import Footer from "../../ComponentesEcommerce/E-Footer/E-Footer";
 import animatedImage from "../../assets/animated-shape.png";
 import GoHomeButton from "../../ComponentesEcommerce/GoHome/GoHome";
 import CalendlyFooter from "../../ComponentesEcommerce/CalendlyFooter/CalendlyFooter";
-import skincareVsl from "../../assets/vsl2.mp4";
 import "./SkincareLanding.css";
 const SkincareLanding = () => {
   const [showGoHomeButton, setShowGoHomeButton] = useState(false);
@@ -31,7 +30,7 @@ const SkincareLanding = () => {
 
   return (
     <div id="home" className="w-full">
-      <Home change="a Skincare e-commerce" video={skincareVsl} />
+      <Home change="a Skincare e-commerce" />
 
       <div className="bg-gray-100 py-12 lg:py-24 space-y-14">
         <Calendly />
