@@ -67,7 +67,7 @@ const Footer = () => {
             />
           </div>
           <div className="w-3/5 lg:w-1/3 flex flex-wrap justify-center mt-6 space-x-0 lg:space-x-4 text-lg">
-            <h1 className="w-full lg:w-auto">© Copyright 2023</h1>
+            <h1 className="w-full lg:w-auto">© Copyright 2024</h1>
             <a
               href=""
               className="w-full lg:w-auto text-gray-700 hover:text-black"
