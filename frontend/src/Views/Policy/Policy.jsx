@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../../Componentes/Footer/Footer";
 import logo from "../../assets/logo-white.png";
+
 const Policy = () => {
   return (
     <div>
@@ -15,77 +16,106 @@ const Policy = () => {
             </h1>
           </div>
           <div className="space-y-8 w-full md:w-2/3 text-lg md:text-xl">
-            <p className="">
+            <p>
               Gracias por visitar nuestra página. La privacidad de nuestros
               visitantes es de suma importancia para nosotros. Esta política de
               privacidad documenta la manera en que recopilamos, utilizamos,
               compartimos y almacenamos su información personal.
             </p>
+
             <div>
               <p className="font-noto-500 text-xl md:text-2xl text-gray-600">
-                Recopilación de Información:
+                Responsable del Tratamiento de los Datos Personales:
               </p>
               <p>
-                Recopilamos información personal, como nombres y direcciones de
-                correo electrónico, solo cuando se proporciona voluntariamente a
-                través de formularios de contacto u otras interacciones en
-                nuestro sitio.
+                DOCTOR SALES LLC es el responsable del tratamiento de los datos personales recabados a través de este formulario.
               </p>
             </div>
+
             <div>
               <p className="font-noto-500 text-xl md:text-2xl text-gray-600">
-                Uso de la Información:
+                Datos que Recopilamos:
               </p>
               <p>
-                La información recopilada se utiliza para responder a consultas,
-                procesar transacciones y enviar información relevante sobre
-                nuestros productos o servicios.
+                Recabamos la siguiente información con tu consentimiento explícito:
               </p>
+              <ul className="list-disc list-inside">
+                <li>Nombre completo</li>
+                <li>Correo electrónico</li>
+                <li>Número de teléfono</li>
+                <li>
+                  Información sobre tu negocio y necesidades específicas (según
+                  las preguntas del formulario).
+                </li>
+              </ul>
             </div>
+
             <div>
               <p className="font-noto-500 text-xl md:text-2xl text-gray-600">
-                Compartir Información:
+                Finalidad del Tratamiento de los Datos:
               </p>
               <p>
-                No compartiremos su información personal con terceros sin su
-                consentimiento, a menos que sea requerido por la ley.
+                Los datos personales proporcionados serán utilizados para:
               </p>
+              <ul className="list-disc list-inside">
+                <li>Contactarte y ofrecerte información relevante sobre nuestros servicios.</li>
+                <li>Diseñar propuestas personalizadas adaptadas a tus necesidades.</li>
+                <li>Gestionar la relación comercial, en caso de contratar nuestros servicios.</li>
+                <li>Enviarte información promocional, solo si das tu consentimiento explícito.</li>
+              </ul>
             </div>
+
             <div>
               <p className="font-noto-500 text-xl md:text-2xl text-gray-600">
-                Cookies:
+                Protección de tus Datos:
               </p>
               <p>
-                Utilizamos cookies para mejorar la experiencia del usuario y
-                analizar el tráfico del sitio. Puede gestionar las preferencias
-                de cookies en cualquier momento a través de la configuración de
-                su navegador.
+                Nos comprometemos a proteger tu información personal mediante el uso de medidas de seguridad administrativas, técnicas y físicas para evitar el acceso, uso, divulgación o modificación no autorizada.
               </p>
             </div>
+
             <div>
               <p className="font-noto-500 text-xl md:text-2xl text-gray-600">
-                Seguridad:
+                Compartición de Datos:
               </p>
               <p>
-                Implementamos medidas de seguridad para proteger la información
-                personal, pero no podemos garantizar la seguridad absoluta. Al
-                utilizar nuestro sitio, usted acepta los riesgos asociados con
-                la transmisión de información por Internet.
+                Tus datos personales no serán vendidos, transferidos ni compartidos con terceros sin tu consentimiento previo, salvo que sea requerido por una autoridad legal.
               </p>
             </div>
+
+            <div>
+              <p className="font-noto-500 text-xl md:text-2xl text-gray-600">
+                Derechos ARCO (Acceso, Rectificación, Cancelación y Oposición):
+              </p>
+              <p>
+                Tienes derecho a:
+              </p>
+              <ul className="list-disc list-inside">
+                <li>Acceder a tus datos personales para saber cómo se utilizan.</li>
+                <li>Solicitar la corrección de datos incorrectos o incompletos.</li>
+                <li>Pedir la cancelación de tus datos, cuando sea posible.</li>
+                <li>Oponerte al uso de tus datos personales para fines específicos.</li>
+              </ul>
+              <p>
+                Para ejercer estos derechos, por favor, contáctanos en [correo electrónico de contacto].
+              </p>
+            </div>
+
             <div>
               <p className="font-noto-500 text-xl md:text-2xl text-gray-600">
                 Cambios en la Política de Privacidad:
               </p>
               <p>
-                Nos reservamos el derecho de actualizar esta política en
-                cualquier momento. Le recomendamos revisar periódicamente esta
-                página para estar informado sobre cualquier cambio.
+                Nos reservamos el derecho de actualizar esta política de privacidad. Cualquier cambio será notificado a través de nuestro sitio web o por correo electrónico.
               </p>
             </div>
+
             <div>
               <p className="font-noto-500 text-xl md:text-2xl text-gray-600">
-              Al continuar utilizando nuestro sitio, usted acepta los términos de esta política de privacidad. Si tiene alguna pregunta o inquietud, no dude en ponerse en contacto con nosotros.
+                Consentimiento:
+              </p>
+              <p>
+                Al enviar este formulario, aceptas que tus datos personales sean tratados de acuerdo con esta política de privacidad.
               </p>
             </div>
           </div>

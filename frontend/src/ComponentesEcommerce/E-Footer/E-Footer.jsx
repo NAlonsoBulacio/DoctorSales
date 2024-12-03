@@ -1,8 +1,4 @@
 import React from "react";
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
-import { FaWhatsapp } from "react-icons/fa";
 import logo from "../../assets/logo-violette.png";
 const Footer = () => {
   const scrollToProcess = () => {
@@ -45,20 +41,7 @@ const Footer = () => {
             <hr className="my-6 border-[1.5px] border-purple-900" />
           </div>
         </div>
-        {/* <div className="flex justify-center items-center space-x-6">
-          <button className="flex justify-center bg-purple-600 items-center rounded-full h-10 w-10 transition-transform transform hover:scale-105">
-            <FaInstagram className="text-white text-2xl" />
-          </button>
-          <button className="flex justify-center bg-purple-600 items-center rounded-full h-10 w-10 transition-transform transform hover:scale-105">
-            <FaLinkedin className="text-white text-2xl" />
-          </button>
-          <button className="flex justify-center bg-purple-600 items-center rounded-full h-10 w-10 transition-transform transform hover:scale-105">
-            <SiGmail className="text-white text-2xl" />
-          </button>
-          <button className="flex justify-center bg-purple-600 items-center rounded-full h-10 w-10 transition-transform transform hover:scale-105">
-            <FaWhatsapp className="text-white text-2xl" />
-          </button>
-        </div> */}
+
         <div className="flex justify-center items-center">
           <div className="w-1/5 lg:w-1/3 flex justify-start">
             <img
@@ -69,7 +52,7 @@ const Footer = () => {
           <div className="w-3/5 lg:w-1/3 flex flex-wrap justify-center mt-6 space-x-0 lg:space-x-4 text-lg">
             <h1 className="w-full lg:w-auto">© Copyright 2023</h1>
             <a
-              href=""
+              href="/policy"
               className="w-full lg:w-auto text-gray-700 hover:text-black"
             >
               Policy Terms
